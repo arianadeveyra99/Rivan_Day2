@@ -53,7 +53,7 @@ class GenerateItems:
             difference = 255 - int(decimal)
             bin_value.append(difference)
             
-        return bin_value
+        return str(bin_value)
         
     def get_binary_format(self):       
         # Determine the binary formate of the cidr
@@ -233,24 +233,31 @@ def gen_many(total):
     
 
 
-
-
 if __name__ == '__main__':  
     import random
     import socket
     import struct
     import rivan
-    import pprint
+    import json
     
     unansw = []
     ans = []
     
     for set in range(1, 5):
-        all_items = gen_many(3)    
-        modify_items = SetItemType(all_items).prompt_user(False, set)
+        all_items = gen_many(3) 
         
-        unansw.append(modify_items)
+        ans.append(all_items)
 
+    with open('test_answers.json', 'w') as file:
+        output = json.dumps(ans, indent=4)
+        file.write(output)
     
-    with open('test.txt', 'w') as file:
-        file.write(str(unansw))
+    set = 0
+    for i in ans:
+        set += 1
+        modify_items = SetItemType(i).prompt_user(False, set)
+        unansw.append(modify_items)
+    
+    with open('test.json', 'w') as file:
+        output = json.dumps(unansw, indent=4)
+        file.write(output)
