@@ -14,15 +14,15 @@ Verify:
 
 @cmd
 ping 10.m.1.10		PC Network Adapter	m = your monitor number
-ping 10.m.1.2		  CoreTAAS
-ping 10.m.1.4		  CoreBABA
+ping 10.m.1.2		CoreTAAS
+ping 10.m.1.4		CoreBABA
 ping 10.m.100.8		CUCM
-ping 10.m.m.1		  EDGE - INSIDE
+ping 10.m.m.1		EDGE - INSIDE
 ping 200.0.0.m		EDGE - OUTSIDE
 ping 200.0.0.k		Klassmate's EDGE	k = klassmate's Monitor Number
 ping 10.k.100.8		Klassmate's CUCM
-ping 10.k.1.4		  Klassmate's CoreBABA
-ping 10.k.1.2		  Klassmate's CoreTAAS
+ping 10.k.1.4		Klassmate's CoreBABA
+ping 10.k.1.2		Klassmate's CoreTAAS
 ping 10.k.1.10		Klassmate's PC
 
 Your Branch must be able to call other klassmates
@@ -46,30 +46,30 @@ __________
 **********
 Counting as a network engineer.
 
-		  Decimal		IPv4				  IPv6
+		Decimal		IPv4				IPv6
 ex. 1	
 -1		1999		1.255.255.255		:1fff:
-		  2000		2.0.0.0				  :2000:
-+1		2001		2.0.0.1				  :2002:
+		2000		2.0.0.0				:2000:
++1		2001		2.0.0.1				:2002:
 
 ex. 2
 -1		2998		2.255.255.254		:2ffe:
-		  2999		2.255.255.255		:2fff:		
-+1		3000		3.0.0.0				  :3000:
+		2999		2.255.255.255		:2fff:		
++1		3000		3.0.0.0				:3000:
 
 ex. 3
 -1		4598		4.5.255.254			:45fe:
-		  4599		4.5.255.255			:45ff:		
-+1		4600		4.6.0.0				  :4600:
+		4599		4.5.255.255			:45ff:		
++1		4600		4.6.0.0				:4600:
 
 ex. 4
 -1
-		  6790		6.7.255.0			  :67f0:
+		6790		6.7.255.0			:67f0:
 +1
 
 ex. 5
 -1
-		  5389		5.3.8.255			  :538f:
+		5389		5.3.8.255			:538f:
 +1
 
 
@@ -161,6 +161,7 @@ CIDR	NETMASK			RIVAN Format		WILDCARD
 Task 3: Bit Length
 
 0 0 0 0  0 0 0 0    0 0 0 0  0 0 0 0
+
                                    0	= 0
                                    1	= 1
                                  1 0	= 2
@@ -363,3 +364,44 @@ config t
  Int Fa 0/7
   swi Voice vlan 25
   do sh ip dhcp binding
+  
+  
+
+Task 4: Subnetting (Subnet)
+
+Ex. 1 Subnet for 8 offices using the Network address 192.168.128.0/27 
+Maximize the number of IP addresses.
+
+	0 0 0 0  0 0 0 0  .  0 0 0 0  0 0 0 0  .  0 0 0 0  0 0 0 0  .  0 0 0 0  0 0 0 0
+	0 0 0 0  0 0 0 0  .  0 0 0 0  0 0 0 0  .  0 0 0 0  0 0 0 0  .  0 0 0 =
+	
+CIA Method
+	CONVERT (Bit Value. NOT Length):	
+	8 = 3 bits
+
+	Add:
+	/27 + 3 bits = /30 (4th, 4i)
+	
+	INSERT(Ipasok):
+	
+	1st Office: 192.168.128.0 /30
+	2nd Office: 192.168.128.4 /30
+	3rd Office: 192.168.128.8 /30
+	4th Office: 192.168.128.12 /30
+	5th Office: 192.168.128.16 /30
+	6th Office: 192.168.128.20 /30
+	7th Office: 192.168.128.24 /30
+	8th Office: 192.168.128.28 /30
+	9th Office: 192.168.128.32 /30
+	
+	From the network 192.168.128.0 /27 (4th, 32i)
+	Valid Range:
+		First Valid: 192.168.128.1 /27
+		Last Valid 192.168.128.30 
+		Broadcast: 192.168.128.31
+	
+	Next Network: 192.168.128.32 /27
+
+
+Ex. 2 Subnet for 20 offices using the Network address 172.16.225.0/19. 
+Maximize the number of IP addresses.
