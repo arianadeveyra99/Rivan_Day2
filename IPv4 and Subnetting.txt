@@ -116,7 +116,8 @@ Private IP address
 LAN               WAN               LAN
 Client - EDGE - INTERNET - EDGE - Server
 
-
+@cmd
+nmap -sP -Pn 192.168.1.1
 
 Task 2: CIDR (Rivan Finger Method)
 
