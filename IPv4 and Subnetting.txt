@@ -37,7 +37,7 @@ Create a domain for ccnam.com			m = your monitor number
 Create a website for ccnam.com
 Create an email for
 	support@ccnam.com
-	___@ccnam.com						___ = your nickname
+	___@ccnam.com				___ = your nickname
 
 Send an email from support@ccnam.com to ___@ccnam.com
 
@@ -48,13 +48,13 @@ Counting as a network engineer.
 
 		Decimal		IPv4				IPv6
 ex. 1	
--1		1999		1.255.255.255		:1fff:
+-1		1999		1.255.255.255			:1fff:
 		2000		2.0.0.0				:2000:
 +1		2001		2.0.0.1				:2002:
 
 ex. 2
--1		2998		2.255.255.254		:2ffe:
-		2999		2.255.255.255		:2fff:		
+-1		2998		2.255.255.254			:2ffe:
+		2999		2.255.255.255			:2fff:		
 +1		3000		3.0.0.0				:3000:
 
 ex. 3
@@ -108,9 +108,9 @@ tracert 8.8.8.8
 	  
 
 Private IP address
-	Class A		10.0.0.0	- 10.255.255.255	16,777,214 ip addresses
+	Class A		10.0.0.0 - 10.255.255.255		16,777,214 ip addresses
 	Class B		172.16.0.0 - 172.31.255.255		64,534 ip addresses
-	Class C		192.168.0.0 - 192.168.255.255	254 ip addresses
+	Class C		192.168.0.0 - 192.168.255.255		254 ip addresses
 
 
 LAN               WAN               LAN
@@ -121,7 +121,7 @@ Client - EDGE - INTERNET - EDGE - Server
 Task 2: CIDR (Rivan Finger Method)
 
 
-								192.168.20.2 /24
+				192.168.20.2 /24
 	
 0 0 0 0  0 0 0 0  .  0 0 0 0  0 0 0 0  .  0 0 0 0  0 0 0 0  . 0 0 0 0  0 0 0 0
 	
@@ -151,7 +151,7 @@ Binary = Decimal
 
 Exercise
 
-CIDR	NETMASK			RIVAN Format		WILDCARD
+CIDR		NETMASK			RIVAN Format			WILDCARD
 /20		__.__.__.__		(_____,__)			__.__.__.__
 /27		__.__.__.__		(_____,__)			__.__.__.__
 /14		__.__.__.__		(_____,__)			__.__.__.__
