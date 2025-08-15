@@ -168,7 +168,7 @@ __Private IP address__
 <br>
 <br>
 
-Ex 01:
+Example 01:
 <details>
 	
 ### `1 1 0 0   0 0 0 0   .   1 0 1 0   1 0 0 0   .   0 0 0 1   0 1 0 0   .   0 0 0 0   0 0 0 1`
@@ -185,7 +185,7 @@ Ex 01:
 
 <br>
 
-Ex 02:
+Example 02:
 <details>
 	
 ### `0 0 0 0   1 0 1 0   .   0 1 1 0   0 1 0 0   .   0 0 0 1   0 1 1 0   .   1 1 0 0   1 1 0 1`
@@ -202,7 +202,7 @@ Ex 02:
 
 <br>
 
-Ex 03:
+Example 03:
 <details>
 	
 ### `1 0 1 0   1 1 0 0   .   0 0 0 1   0 0 0 0   .   0 0 1 0   1 0 1 0   .   1 1 0 0   1 1 0 1`
@@ -242,14 +242,17 @@ Ex 03:
 |                    |        |
 | `0 0 0 1  0 0 0 0` | = 16   |
 
+&nbsp;
+---
+&nbsp;
 
+### Exercise 01: 
 
-Exercise
-
-CIDR	NETMASK			RIVAN Format		WILDCARD
-/20		__.__.__.__		(_____,__)			__.__.__.__
-/27		__.__.__.__		(_____,__)			__.__.__.__
-/14		__.__.__.__		(_____,__)			__.__.__.__
+| CIDR | NETMASK     | RIVAN Format | WILDCARD    |
+| ---  | ---         | ---          | ---         |
+| /20  | __.__.__.__ | (_____,__)   | __.__.__.__ |
+| /27  | __.__.__.__ | (_____,__)   | __.__.__.__ |
+| /14  | __.__.__.__ | (_____,__)   | __.__.__.__ |
 
 
 
@@ -521,6 +524,7 @@ Maximize the number of IP addresses.
 
 Ex. 3 Subnet for 20 offices using the Network address 172.16.225.0/19. 
 Maximize the number of IP addresses.
+
 
 
 
