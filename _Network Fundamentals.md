@@ -37,8 +37,9 @@ View your cameras:
   - http://10.#$34T#.50.6
   - http://10.#$34T#.50.8
 
-<br>
-<br>
+&nbsp;
+---
+&nbsp;
 
 ### Configure DNS
 Create DNS zones & records for day2#$34T#.com			#$34T# = your monitor number
@@ -61,47 +62,50 @@ Send an email from support@day2#$34T#.com to user1@day2#$34T#.com
 
 # Network Fundamentals
 
-## Counting as a network engineer.
+### Counting as a network engineer.
 
-		Decimal		IPv4				IPv6
-ex. 1	
--1		1999		1.255.255.255		:1fff:
-		2000		2.0.0.0				:2000:
-+1		2001		2.0.0.1				:2002:
+|     | Decimal | IPv4          | IPv6   |
+| --- | ---     | ---           | ---    |
+| -1  | 1999    | 1.255.255.255 | :1fff: |
+|     | 2000    | 2.0.0.0       | :2000: |
+| +1  | 2001    | 2.0.0.1       | :2001: |
+|     |         |               |        |
+| -1  |         |               |        |
+|     | 2999    | 2.255.255.255 | :2fff: |
+| +1  |         |               |        |
+|     |         |               |        |
+| -1  |         |               |        |
+|     | 4099    | 4.0.255.255   | :40ff: |
+| +1  |         |               |        |
+|     |         |               |        |
+| -1  |         |               |        |
+|     | 6790    | 6.7.255.0     | :67f0: |
+| +1  |         |               |        |
+|     |         |               |        |
+| -1  |         |               |        |
+|     | 5389    | 5.3.8.255     | :538f: |
+| +1  |         |               |        |
+|     |         |               |        |
 
-ex. 2
--1		2998		2.255.255.254		:2ffe:
-		2999		2.255.255.255		:2fff:		
-+1		3000		3.0.0.0				:3000:
+<br>
+<br>
 
-ex. 3
--1		4598		4.5.255.254			:45fe:
-		4599		4.5.255.255			:45ff:		
-+1		4600		4.6.0.0				:4600:
+---
+&nbsp;
 
-ex. 4
--1
-		6790		6.7.255.0			:67f0:
-+1
-
-ex. 5
--1
-		5389		5.3.8.255			:538f:
-+1
-
-
-__________
-**********
-Internet Protocol Version 4 (IPv4)
-
-Task 1: Public and Private IPv4 address
+## Internet Protocol Version 4 (IPv4)
+*What is the IP address of your phone?*
+  - [IP Chicken](https://ipchicken.com/)
+  - ipconfig
 
 Public IP address
-	Class A		1.0.0.0	- 126.255.255.255
-	Class B		128.0.0.0 - 191.255.0.0
-	Class C		192.0.0.0 - 223.255.255.0
-	Class D		224.0.0.0 - 239.255.255.255
-	Class E		240.0.0.0 - 255.255.255.255
+| Class | IP Range                    |
+| ---   | ---                         |
+| A     | 1.0.0.0 - 126.255.255.255   |
+| B     | 128.0.0.0 - 191.255.0.0     |
+| C     | 192.0.0.0 - 223.255.255.0   |
+| D     | 224.0.0.0 - 239.255.255.255 |
+| E     | 240.0.0.0 - 255.255.255.255 |
 
 @cmd
 ping 8.8.8.8
@@ -443,6 +447,7 @@ Maximize the number of IP addresses.
 
 Ex. 3 Subnet for 20 offices using the Network address 172.16.225.0/19. 
 Maximize the number of IP addresses.
+
 
 
 
