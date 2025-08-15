@@ -1,5 +1,0 @@
-
-@cmd
-ping scanme.nmap.com
-nmap -v 45.33.32.156
-
