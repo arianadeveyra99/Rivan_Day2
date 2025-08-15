@@ -154,6 +154,8 @@ __Private IP address__
 
 <br>
 <br>
+<br>
+<br>
 
 ---
 &nbsp;
@@ -166,6 +168,7 @@ __Private IP address__
 <br>
 <br>
 
+Ex 01:
 <details>
 	
 ### `1 1 0 0   0 0 0 0   .   1 0 1 0   1 0 0 0   .   0 0 0 1   0 1 0 0   .   0 0 0 0   0 0 0 1`
@@ -173,8 +176,27 @@ __Private IP address__
 ### `1 1 1 1   1 1 1 1   .   1 1 1 1   1 1 1 1   .   1 1 1 1   1 1 1 1   .   0 0 0 0   0 0 0 0`
 
 <br>
+<br>
+<br>
 
 ### `1 1 0 0   0 0 0 0   .   1 0 1 0   1 0 0 0   .   0 0 0 1   0 1 0 0   .   1 1 1 1   1 1 1 1`
+
+</details>
+
+<br>
+
+Ex 02:
+<details>
+	
+### `0 0 0 0   1 0 1 0   .   0 1 1 0   0 1 0 0   .   0 0 0 1   0 1 1 0   .   1 1 0 0   1 1 0 1`
+
+### `1 1 1 1   1 1 1 1   .   1 1 1 1   1 1 1 1   .   1 1 1 1   1 1 1 1   .   1 1 1 1   1 1 0 0`
+
+<br>
+<br>
+<br>
+
+### `0 0 0 0   1 0 1 0   .   0 1 1 0   0 1 0 0   .   0 0 0 1   0 1 1 0   .   1 1 0 0   1 1 1 1`
 
 </details>
 
@@ -482,6 +504,7 @@ Maximize the number of IP addresses.
 
 Ex. 3 Subnet for 20 offices using the Network address 172.16.225.0/19. 
 Maximize the number of IP addresses.
+
 
 
 
