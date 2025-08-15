@@ -95,10 +95,10 @@ Send an email from support@day2#$34T#.com to user1@day2#$34T#.com
 
 ## Internet Protocol Version 4 (IPv4)
 *What is the IP address of your phone?*
-  - [IP Chicken](https://ipchicken.com/)
+  - ipchicken.com
   - ipconfig
 
-Public IP address
+__Public IP address__
 | Class | IP Range                    |
 | ---   | ---                         |
 | A     | 1.0.0.0 - 126.255.255.255   |
@@ -107,26 +107,38 @@ Public IP address
 | D     | 224.0.0.0 - 239.255.255.255 |
 | E     | 240.0.0.0 - 255.255.255.255 |
 
+<br>
+
+~~~cmd
 @cmd
 ping 8.8.8.8
 ping 1.1.1.1
-ping 4.4.4.4
+ping 4.4.1.1
 
 tracert 8.8.8.8
+~~~
 
-	Expected Output.
-	  Tracing route to dns.google [8.8.8.8]
-	  over a maximum of 30 hops:
+<br>
 
-	  1     2 ms     2 ms     2 ms  192.168.1.1
-	  2     5 ms     6 ms     6 ms  100.83.0.1
-	  3     5 ms     5 ms     4 ms  122.2.203.2.static.pldt.net [122.2.203.2]
-	  4     5 ms     5 ms     4 ms  210.213.130.3.static.pldt.net [210.213.130.3]
-	  5     8 ms     8 ms     8 ms  142.250.175.196
-	  6     7 ms     6 ms     5 ms  142.251.251.39
-	  7     7 ms     6 ms     6 ms  142.251.247.171
-	  8     5 ms     5 ms     5 ms  dns.google [8.8.8.8]
-	  
+<details>
+~~~cmd
+Tracing route to dns.google [8.8.8.8]
+over a maximum of 30 hops:
+
+  1    20 ms     1 ms     1 ms  10.28.0.1
+  2     2 ms     1 ms     1 ms  192.168.100.1
+  3    10 ms    10 ms     8 ms  10.56.0.1
+  4     *        9 ms     *     161.49.4.128.convergeict.com [161.49.4.128]
+  5     6 ms     4 ms     4 ms  161.49.4.240.convergeict.com [161.49.4.240]
+  6     *        *        *     Request timed out.
+  7     4 ms     5 ms     5 ms  161.49.6.147.convergeict.com [161.49.6.147]
+  8     5 ms     5 ms     4 ms  142.250.174.148
+  9     9 ms     5 ms     5 ms  142.251.251.137
+ 10     5 ms     5 ms     6 ms  142.251.246.167
+ 11     5 ms     9 ms     4 ms  dns.google [8.8.8.8]
+~~~
+</details>
+
 
 Private IP address
 	Class A		10.0.0.0	- 10.255.255.255	16,777,214 ip addresses
@@ -447,6 +459,7 @@ Maximize the number of IP addresses.
 
 Ex. 3 Subnet for 20 offices using the Network address 172.16.225.0/19. 
 Maximize the number of IP addresses.
+
 
 
 
