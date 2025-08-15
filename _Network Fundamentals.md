@@ -53,6 +53,11 @@ Create an email for
 
 Send an email from support@day2#$34T#.com to user1@day2#$34T#.com
 
+<br>
+<br>
+
+---
+&nbsp;
 
 # Network Fundamentals
 
@@ -438,6 +443,7 @@ Maximize the number of IP addresses.
 
 Ex. 3 Subnet for 20 offices using the Network address 172.16.225.0/19. 
 Maximize the number of IP addresses.
+
 
 
 
