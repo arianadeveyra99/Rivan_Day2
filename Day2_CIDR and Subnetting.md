@@ -5,41 +5,51 @@
 ## Warm Up for Day 2.
 *"Repetition is the mother of all skills"*
 
+<br>
+
 Configure the following:
-	- Switch (__CoreTAAS__ & __CoreBABA__)
-	- Voice Gateway/Call Manager (__CUCM - Cisco Unified Call Manager__)
-	- Router (__EDGE__)
+  - Switch (__CoreTAAS__ & __CoreBABA__)
+  - Voice Gateway/Call Manager (__CUCM - Cisco Unified Call Manager__)
+  - Router (__EDGE__)
+
+<br>
 
 Verify:
 
+~~~cmd
 @cmd
-ping 10.m.1.10		PC Network Adapter	m = your monitor number
-ping 10.m.1.2		CoreTAAS
-ping 10.m.1.4		CoreBABA
-ping 10.m.100.8		CUCM
-ping 10.m.m.1		EDGE - INSIDE
-ping 200.0.0.m		EDGE - OUTSIDE
-ping 200.0.0.k		Klassmate's EDGE	k = klassmate's Monitor Number
-ping 10.k.100.8		Klassmate's CUCM
-ping 10.k.1.4		Klassmate's CoreBABA
-ping 10.k.1.2		Klassmate's CoreTAAS
-ping 10.k.1.10		Klassmate's PC
+ping 10.91.1.10             PC Network Adapter
+ping 10.#$34T#.1.2		    CoreTAAS
+ping 10.#$34T#.1.4		    CoreBABA
+ping 10.#$34T#.100.8		CUCM
+ping 10.#$34T#.#$34T#.1		EDGE - INSIDE
+ping 200.0.0.#$34T#		    EDGE - OUTSIDE
+
+ping 200.0.0.k		        Klassmate's EDGE	       k = klassmate's Monitor Number
+ping 10.k.100.8		        Klassmate's CUCM
+ping 10.k.1.4		        Klassmate's CoreBABA
+ping 10.k.1.2		        Klassmate's CoreTAAS
+ping 10.k.1.10		        Klassmate's PC
+~~~
 
 Your Branch must be able to call other klassmates
-View your cameras
-	10.m.50.6
-	10.m.50.8
-	
+View your cameras:
+  - http://10.#$34T#.50.6
+  - http://10.#$34T#.50.8
+
+
 
 Configure DNS
 
-Create a domain for ccnam.com			m = your monitor number
-Create a website for ccnam.com
+Create DNS zones & records for day2#$34T#.com			#$34T# = your monitor number
+Create a website for day2#$34T#.com
 Create an email for
-	support@ccnam.com
-	___@ccnam.com						___ = your nickname
+| Email                     | Name           |
+| ---                       | ---            |
+| support@day2#$34T#.com    | Rivan Support  |
+| user1@day2#$34T#.com      | User1           |
 
-Send an email from support@ccnam.com to ___@ccnam.com
+Send an email from support@day2#$34T#.com to user1@day2#$34T#.com
 
 
 __________
@@ -426,6 +436,7 @@ Maximize the number of IP addresses.
 
 Ex. 3 Subnet for 20 offices using the Network address 172.16.225.0/19. 
 Maximize the number of IP addresses.
+
 
 
 
