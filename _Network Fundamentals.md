@@ -98,6 +98,8 @@ Send an email from support@day2#$34T#.com to user1@day2#$34T#.com
   - ipchicken.com
   - ipconfig
 
+<br>
+
 __Public IP address__
 | Class | IP Range                    |
 | ---   | ---                         |
@@ -118,9 +120,8 @@ ping 4.4.1.1
 tracert 8.8.8.8
 ~~~
 
-<br>
-
 <details>
+	
 ~~~cmd
 Tracing route to dns.google [8.8.8.8]
 over a maximum of 30 hops:
@@ -137,27 +138,38 @@ over a maximum of 30 hops:
  10     5 ms     5 ms     6 ms  142.251.246.167
  11     5 ms     9 ms     4 ms  dns.google [8.8.8.8]
 ~~~
+
 </details>
 
+&nbsp;
+---
+&nbsp;
 
-Private IP address
-	Class A		10.0.0.0	- 10.255.255.255	16,777,214 ip addresses
-	Class B		172.16.0.0 - 172.31.255.255		64,534 ip addresses
-	Class C		192.168.0.0 - 192.168.255.255	254 ip addresses
+__Private IP address__
+| Class | IP Range                        | No. of Host |
+| ---   | ---                             | ---         |
+| A     | 10.0.0.0 - 10.255.255.255       | 16,777,214  |
+| B     | 172.16.0.0 - 172.31.255.255     | 64,534      |
+| C     | 192.168.0.0 - 192.168.255.255   | 254         |
 
+<br>
+<br>
 
-LAN               WAN               LAN
-Client - EDGE - INTERNET - EDGE - Server
+---
+&nbsp;
 
-
-
-Task 2: CIDR (Rivan Finger Method)
-
-
-								192.168.20.2 /24
+### CIDR (Rivan Finger Method)
+*How do devices see IP addresses? *
 	
-0 0 0 0  0 0 0 0  .  0 0 0 0  0 0 0 0  .  0 0 0 0  0 0 0 0  . 0 0 0 0  0 0 0 0
-	
+### `0 0 0 0   0 0 0 0   .   0 0 0 0   0 0 0 0   .   0 0 0 0   0 0 0 0   .   0 0 0 0   0 0 0 0`
+
+<br>
+<br>
+
+### `1 1 0 0   0 0 0 0   .   1 0 1 0   1 0 0 0   .   0 0 0 1   0 1 0 0   .   0 0 0 0   0 0 0 1`
+
+### `1 1 1 1   1 1 1 1   .   1 1 1 1   1 1 1 1   .   1 1 1 1   1 1 1 1   .   0 0 0 0   0 0 0 0`
+
 
 
 Binary = Decimal
@@ -459,6 +471,7 @@ Maximize the number of IP addresses.
 
 Ex. 3 Subnet for 20 offices using the Network address 172.16.225.0/19. 
 Maximize the number of IP addresses.
+
 
 
 
