@@ -1,12 +1,14 @@
-__________
-**********
-Warm Up for Day 2.
-"Repetition is the mother of all skills"
+
+<!-- Your monitor number = #$34T# -->
+
+
+## Warm Up for Day 2.
+*"Repetition is the mother of all skills"*
 
 Configure the following:
-	- Switch (CoreTAAS & CoreBABA)
-	- Voice Gateway/Call Manager (CUCM - Cisco Unified Call Manager)
-	- Router (EDGE)
+	- Switch (__CoreTAAS__ & __CoreBABA__)
+	- Voice Gateway/Call Manager (__CUCM - Cisco Unified Call Manager__)
+	- Router (__EDGE__)
 
 Verify:
 
@@ -424,6 +426,7 @@ Maximize the number of IP addresses.
 
 Ex. 3 Subnet for 20 offices using the Network address 172.16.225.0/19. 
 Maximize the number of IP addresses.
+
 
 
 
