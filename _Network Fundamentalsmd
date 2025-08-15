@@ -7,7 +7,7 @@
 
 <br>
 
-Configure the following:
+### Configure the following:
   - Switch (__CoreTAAS__ & __CoreBABA__)
   - Voice Gateway/Call Manager (__CUCM - Cisco Unified Call Manager__)
   - Router (__EDGE__)
@@ -37,24 +37,26 @@ View your cameras:
   - http://10.#$34T#.50.6
   - http://10.#$34T#.50.8
 
+<br>
+<br>
 
-
-Configure DNS
-
+### Configure DNS
 Create DNS zones & records for day2#$34T#.com			#$34T# = your monitor number
 Create a website for day2#$34T#.com
 Create an email for
 | Email                     | Name           |
 | ---                       | ---            |
 | support@day2#$34T#.com    | Rivan Support  |
-| user1@day2#$34T#.com      | User1           |
+| user1@day2#$34T#.com      | User1          |
+
+<br>
 
 Send an email from support@day2#$34T#.com to user1@day2#$34T#.com
 
 
-__________
-**********
-Counting as a network engineer.
+# Network Fundamentals
+
+## Counting as a network engineer.
 
 		Decimal		IPv4				IPv6
 ex. 1	
@@ -436,6 +438,7 @@ Maximize the number of IP addresses.
 
 Ex. 3 Subnet for 20 offices using the Network address 172.16.225.0/19. 
 Maximize the number of IP addresses.
+
 
 
 
