@@ -200,6 +200,21 @@ Ex 02:
 
 </details>
 
+Ex 03:
+<details>
+	
+### `1 0 1 0   1 1 0 0   .   0 0 0 1   0 0 0 0   .   0 0 1 0   1 0 1 0   .   1 1 0 0   1 1 0 1`
+
+### `1 1 1 1   1 1 1 1   .   1 1 1 1   1 1 1 1   .   1 1 1 1   1 0 0 0   .   0 0 0 0   0 0 0 0`
+
+<br>
+<br>
+<br>
+
+### `1 0 1 0   1 1 0 0   .   0 0 0 1   0 0 0 0   .   0 0 1 0   1 1 1 1   .   1 1 1 1   1 1 1 1`
+
+</details>
+
 &nbsp;
 ---
 &nbsp;
@@ -504,6 +519,7 @@ Maximize the number of IP addresses.
 
 Ex. 3 Subnet for 20 offices using the Network address 172.16.225.0/19. 
 Maximize the number of IP addresses.
+
 
 
 
