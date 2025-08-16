@@ -407,12 +407,12 @@ CIA Method
 
 |                               |                        |
 | ---                           | ---                    |
-| Network IP                    |                        |
-| First Valid (Network +1)      |                        |
-| Last Valid (Broadcast -1)     |                        |
-| Broadcast (Next Network -1)   |                        |
+| Network IP                    | &nbsp;                 |
+| First Valid (Network +1)      | &nbsp;                 |
+| Last Valid (Broadcast -1)     | &nbsp;                 |
+| Broadcast (Next Network -1)   | &nbsp;                 |
 |                               |                        |
-| Next Network (Insert i again) |                        |
+| Next Network (Insert i again) | &nbsp;                 |
 
 <br>
 <br>
@@ -582,6 +582,7 @@ Maximize the number of IP addresses.
 
 Ex. 3 Subnet for 20 offices using the Network address 172.16.225.0/19. 
 Maximize the number of IP addresses.
+
 
 
 
