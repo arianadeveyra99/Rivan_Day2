@@ -262,51 +262,43 @@ __Example 03:__
 | /14  |             | (Octet, i)   |             |
 
 <br>
+<br>
+
+---
+&nbsp;
 
 ## 0️⃣ Bit Length
 
-### 0 0 0 0  0 0 0 0    0 0 0 0  0 0 0 0  
+### 0 0 0 0  0 0 0 0    0 0 0 0  0 0 0 0   
 
-                                   0	= 0
-                                   1	= 1
-                                 1 0	= 2
-                                 1 1	= 3
-                               1 0 0	= 4
-                               1 0 1	= 5
-                               1 1 0	= 6
-                               1 1 1	= 7
-                             1 0 0 0	= 8
-                             1 0 0 1	= 9
-                             1 0 1 0	= 10
-                             1 0 1 1	= 11
-                             1 1 0 0	= 12
-                             1 1 0 1	= 13
-                             1 1 1 0	= 14
-                             1 1 1 1	= 15
-                          1  0 0 0 0	= 16
+&nbsp;
+---
+&nbsp;
+  
+### Exercise 02: Find the Bit Length
+195 =  
+13 =  
+1750 =  
+1855 =  
+2,700 =  
+2 =  
+376 =  
+888 =  
+8 =  
+212 =   
+4,500 =  
+81 =  
+20,000 =  
+55 =  
+your age =  
 
+<br>
+<br>
 
+---
+&nbsp;
 
-Exercise
-
-195 = 
-13 = 
-1750 = 
-1855 = 
-2,700 = 
-2 = 
-376 = 
-888 = 
-8 = 
-212 =  
-4,500 = 
-81 =
-20,000  = 
-55 = 
-
-
-
-Task 4: Subnetting (Host)
+## Subnetting (Host)
 
 Ex. 1 Design a network for accenture.com 
 with 1750 agents, team leads, project managers, 
