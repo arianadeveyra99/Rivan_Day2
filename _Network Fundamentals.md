@@ -175,7 +175,7 @@ __Private IP address__
 <br>
 <br>
 
-Example 01:
+__Example 01:__
 <details>
 	
 ### `1 1 0 0   0 0 0 0   .   1 0 1 0   1 0 0 0   .   0 0 0 1   0 1 0 0   .   0 0 0 0   0 0 0 1`
@@ -192,7 +192,7 @@ Example 01:
 
 <br>
 
-Example 02:
+__Example 02:__
 <details>
 	
 ### `0 0 0 0   1 0 1 0   .   0 1 1 0   0 1 0 0   .   0 0 0 1   0 1 1 0   .   1 1 0 0   1 1 0 1`
@@ -209,7 +209,7 @@ Example 02:
 
 <br>
 
-Example 03:
+__Example 03:__
 <details>
 	
 ### `1 0 1 0   1 1 0 0   .   0 0 0 1   0 0 0 0   .   0 0 1 0   1 0 1 0   .   1 1 0 0   1 1 0 1`
@@ -253,19 +253,19 @@ Example 03:
 ---
 &nbsp;
 
-### Exercise 01: 
+### Exercise 01: Convert CIDR to various formats
 
 | CIDR | NETMASK     | RIVAN Format | WILDCARD    |
 | ---  | ---         | ---          | ---         |
-| /20  | __.__.__.__ | (_____,__)   | __.__.__.__ |
-| /27  | __.__.__.__ | (_____,__)   | __.__.__.__ |
-| /14  | __.__.__.__ | (_____,__)   | __.__.__.__ |
+| /20  |             | (Octet, i)   |             |
+| /27  |             | (Octet, i)   |             |
+| /14  |             | (Octet, i)   |             |
 
+<br>
 
+## 0️⃣ Bit Length
 
-Task 3: Bit Length
-
-0 0 0 0  0 0 0 0    0 0 0 0  0 0 0 0
+### 0 0 0 0  0 0 0 0    0 0 0 0  0 0 0 0  
 
                                    0	= 0
                                    1	= 1
@@ -284,6 +284,8 @@ Task 3: Bit Length
                              1 1 1 0	= 14
                              1 1 1 1	= 15
                           1  0 0 0 0	= 16
+
+
 
 Exercise
 
@@ -531,6 +533,7 @@ Maximize the number of IP addresses.
 
 Ex. 3 Subnet for 20 offices using the Network address 172.16.225.0/19. 
 Maximize the number of IP addresses.
+
 
 
 
