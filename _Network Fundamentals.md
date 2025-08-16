@@ -360,29 +360,25 @@ __10.0.8.0 /21__
 
 <br>
 
-
-Determine Parts of the Network IP:
-
-	Network IP: 10.0.8.0 255.255.248.0
-	Valid Range:
-		First Valid (Network +1): 10.0.8.1
-		Last Valid (Broadcast -1): 10.0.15.254
-	Broadcast (Next Network -1): 10.0.15.255
+Network IP: 10.0.8.0 255.255.248.0  
+Valid Range:  
+- First Valid (Network +1): 10.0.8.1  
+- Last Valid (Broadcast -1): 10.0.15.254  
+Broadcast (Next Network -1): 10.0.15.255  
 	
-	Next Network (Insert i again): 10.0.16.0
+Next Network (Insert i again): 10.0.16.0  
 
+&nbsp;
+---
+&nbsp;
 
-
-Ex. 2 Design a network for concentrix.com 
-with 160 admin, 250 managers, 112 executive, 100 security agents.
-Use the 172.16.0.0/16 IP address space
-
-	A. 172.16.8.0 /22
-	B. 172.16.16.0 /23
-	C. 172.16.4.0 /22
-	D. 172.16.2.0 /23
+### 🎯 Exercise 04: Design a network for concentrix.com with 160 admin, 250 managers, 112 executive, 100 security agents. Use the 172.16.0.0/16 IP address space.
+- [ ] 172.16.8.0 /22
+- [ ] 172.16.16.0 /23
+- [ ] 172.16.4.0 /22
+- [ ] 172.16.2.0 /23
 	
-	
+<details>
 Given information:
 	160 + 250 + 112 + 100 = 622
 	172.16.0.0/16 
@@ -406,7 +402,7 @@ Determine Parts of the Network IP:
 	Broadcast (Next Network -1): 172.16.7.255
 	
 	Next Network (Insert i again): 172.16.8.0
-
+</details>
 
 
 Ex. 3 Design a network for foundever.com
@@ -547,6 +543,7 @@ Maximize the number of IP addresses.
 
 Ex. 3 Subnet for 20 offices using the Network address 172.16.225.0/19. 
 Maximize the number of IP addresses.
+
 
 
 
