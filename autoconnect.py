@@ -3,10 +3,11 @@ lab = crt.Dialog.Prompt("""
 What Lab will you be using? (Input the number of the corresponding lab.)
 
 RSTvX = 1
-MPLS = 2
-WAN = 3
-3Tier = 4
-NetAuto = 5
+RSTvX (Day5) = 2
+MPLS = 3
+WAN = 4
+3Tier = 5
+NetAuto = 6
 
 Manually enter a series of port numbers = 0 
 
@@ -34,6 +35,18 @@ if lab == "1":
     ]
 elif lab == "2":
     connections = [
+        "/TELNET " + rst_ip + " 2001",
+        "/TELNET " + rst_ip + " 2002",
+        "/TELNET " + rst_ip + " 2003",
+        "/TELNET " + rst_ip + " 2004",
+        "/TELNET " + rst_ip + " 2005",
+        "/TELNET " + rst_ip + " 2006",
+        "/TELNET " + rst_ip + " 2007",
+        "/TELNET " + rst_ip + " 2008",
+        "/TELNET " + rst_ip + " 2009"
+    ]
+elif lab == "3":
+    connections = [
         "/TELNET " + rst_ip + " 2017",
         "/TELNET " + rst_ip + " 2018",
         "/TELNET " + rst_ip + " 2019",
@@ -47,7 +60,7 @@ elif lab == "2":
         "/TELNET " + rst_ip + " 2027",
         "/TELNET " + rst_ip + " 2028"
     ]
-elif lab == "3":
+elif lab == "4":
     connections = [
         "/TELNET " + rst_ip + " 2135",
         "/TELNET " + rst_ip + " 2136",
@@ -70,7 +83,7 @@ elif lab == "3":
         "/TELNET " + rst_ip + " 2153",
         "/TELNET " + rst_ip + " 2154"
     ]
-elif lab == "4":
+elif lab == "5":
     connections = [
         "/TELNET " + rst_ip + " 2204",
         "/TELNET " + rst_ip + " 2205",
@@ -87,7 +100,7 @@ elif lab == "4":
         "/TELNET " + rst_ip + " 2216",
         "/TELNET " + rst_ip + " 2217"
     ]
-elif lab == "5":
+elif lab == "6":
     connections = [
         "/TELNET " + rst_ip + " 2262",
         "/TELNET " + rst_ip + " 2263",
