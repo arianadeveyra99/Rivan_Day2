@@ -2,12 +2,12 @@
 <!-- Your monitor number = #$34T# -->
 
 
-## Warm Up for Day 2.
+## ⛅ Warm Up for Day 2.
 *"Repetition is the mother of all skills"*
 
 <br>
 
-### Configure the following:
+### 🔧 Configure the following:
   - Switch (__CoreTAAS__ & __CoreBABA__)
   - Voice Gateway/Call Manager (__CUCM - Cisco Unified Call Manager__)
   - Router (__EDGE__)
@@ -44,12 +44,12 @@ View your cameras:
 ---
 &nbsp;
 
-### Configure DNS
-Create DNS zones & records for daytwo#$34T#.com			#$34T# = your monitor number
-Create a website for daytwo#$34T#.com
-Create an email for
-| Email                     | Name           |
-| ---                       | ---            |
+### 🌐 Configure DNS
+Create __DNS zones & records__ for daytwo#$34T#.com  
+Create a __website__ for daytwo#$34T#.com  
+Create an __email__ for  
+| Email                       | Name           |
+| ---                         | ---            |
 | support@daytwo#$34T#.com    | Rivan Support  |
 | user1@daytwo#$34T#.com      | User1          |
 
@@ -63,9 +63,9 @@ Send an email from support@daytwo#$34T#.com to user1@daytwo#$34T#.com
 ---
 &nbsp;
 
-# Network Fundamentals
+# 💻 Network Fundamentals
 
-### Counting as a network engineer.
+### 🔢 Counting as a network engineer.
 
 |     | Decimal | IPv4          | IPv6   |
 | --- | ---     | ---           | ---    |
@@ -167,7 +167,7 @@ __Private IP address__
 ---
 &nbsp;
 
-## CIDR (Rivan Finger Method)
+## 🙌 CIDR (Rivan Finger Method)
 *How do devices see IP addresses? *
 	
 ### `0 0 0 0   0 0 0 0   .   0 0 0 0   0 0 0 0   .   0 0 0 0   0 0 0 0   .   0 0 0 0   0 0 0 0`
@@ -531,6 +531,7 @@ Maximize the number of IP addresses.
 
 Ex. 3 Subnet for 20 offices using the Network address 172.16.225.0/19. 
 Maximize the number of IP addresses.
+
 
 
 
