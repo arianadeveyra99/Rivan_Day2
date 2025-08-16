@@ -505,15 +505,15 @@ S2
 - Reserved IPs: First 100 IPs
 - Assign to VLAN: 67
 
+<br>
+<br>
 
+---
+&nbsp;
 
+## Subnetting (Subnet)
 
-
-
-
-Task 4: Subnetting (Subnet)
-
-Ex. 1 Subnet for 8 offices using the Network address 192.168.128.0/27 
+### Subnet for 8 offices using the Network address 192.168.128.0/27 
 Maximize the number of IP addresses.
 
 	0 0 0 0  0 0 0 0  .  0 0 0 0  0 0 0 0  .  0 0 0 0  0 0 0 0  .  0 0 0 0  0 0 0 0
@@ -555,6 +555,7 @@ Maximize the number of IP addresses.
 
 Ex. 3 Subnet for 20 offices using the Network address 172.16.225.0/19. 
 Maximize the number of IP addresses.
+
 
 
 
