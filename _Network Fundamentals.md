@@ -45,9 +45,10 @@ View your cameras:
 &nbsp;
 
 ### 🌐 Configure DNS
-Create __DNS zones & records__ for daytwo#$34T#.com  
-Create a __website__ for daytwo#$34T#.com  
-Create an __email__ for  
+  - Create __DNS zones & records__ for daytwo#$34T#.com  
+  - Create a __website__ for daytwo#$34T#.com  
+  - Create an __email__ for
+
 | Email                       | Name           |
 | ---                         | ---            |
 | support@daytwo#$34T#.com    | Rivan Support  |
@@ -90,13 +91,11 @@ Send an email from support@daytwo#$34T#.com to user1@daytwo#$34T#.com
 | +1  |         |               |        |
 |     |         |               |        |
 
-<br>
-<br>
-
+&nbsp;
 ---
 &nbsp;
 
-## Internet Protocol Version 4 (IPv4)
+### Internet Protocol Version 4 (IPv4)
 *What is the IP address of your phone?*
   - ipchicken.com
   - ipconfig
@@ -261,9 +260,7 @@ __Example 03:__
 | /27  |             | (Octet, i)   |             |
 | /14  |             | (Octet, i)   |             |
 
-<br>
-<br>
-
+&nbsp;
 ---
 &nbsp;
 
@@ -287,31 +284,29 @@ __Example 03:__
 &nbsp;
   
 ### Exercise 02: Find the Bit Length
-| Value    | Bits |
-| ---      | ---  |
-| 195      |      |
-| 13       |      |
-| 1750     |      |
-| 1855     |      |
-| 2700     |      |
-| 2        |      |
-| 376      |      |
-| 888      |      |
-| 8        |      |
-| 212      |      |
-| 4,500    |      |
-| 81       |      |
-| 20,000   |      |
-| 55       |      |
-| your age |      |
+| Value     | Bits |
+| ---       | ---  |
+| 195       |      |
+| 13        |      |
+| 1,750     |      |
+| 1,855     |      |
+| 2,700     |      |
+| 2         |      |
+| 376       |      |
+| 888       |      |
+| 8         |      |
+| 212       |      |
+| 4,500     |      |
+| 81        |      |
+| 20,000    |      |
+| 55        |      |
+| your age  |      |
 
-<br>
-<br>
-
+&nbsp;
 ---
 &nbsp;
 
-## Subnetting (Host)
+##  Subnetting (Host)
 
 Ex. 1 Design a network for accenture.com 
 with 1750 agents, team leads, project managers, 
@@ -538,6 +533,7 @@ Maximize the number of IP addresses.
 
 Ex. 3 Subnet for 20 offices using the Network address 172.16.225.0/19. 
 Maximize the number of IP addresses.
+
 
 
 
