@@ -335,12 +335,12 @@ __Example 03:__
 <br>
 
 ### CIA Method  
-> __CONVERT__  
+__CONVERT__  
   1750 = 11 bits
 
 <br>
 
-> __SUBTRACT__  
+__SUBTRACT__  
   /32 - 11 bits = /21
 
 <br>
@@ -358,7 +358,7 @@ Why /32?
 
 <br>
 	
-> __INSERT (*IPASOK*)__  
+__INSERT (*IPASOK*)__  
 /21 (Octet, i)
 
 <br>
@@ -582,6 +582,7 @@ Maximize the number of IP addresses.
 
 Ex. 3 Subnet for 20 offices using the Network address 172.16.225.0/19. 
 Maximize the number of IP addresses.
+
 
 
 
