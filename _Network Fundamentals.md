@@ -421,7 +421,6 @@ CIA Method
 &nbsp;
 
 ### 🎯 Exercise 05: Design and implement a network for `foundever.com` with 45 users. Use the 192.168.0.0/24 IP address space
-
 CIA Method
 - CONVERT:	
 - SUBTRACT:
@@ -472,70 +471,44 @@ show ip dhcp binding
 
 
 ### 🎯 Exercise 06: Design and implement networks.
+P1
+- IP address: 10.35.0.0/16
+- Domain Name: BSP.COM
+- Number of Users: 812
+- Reserved IPs: First 70 IPs
+- Assign to VLAN: 35
 
-with 72 users.
-Use the 192.168.0.0/24 IP address space
+<br>
 
-Given information:
+P1
+- IP address: 172.16.87.0/16
+- Domain Name: ACCENTURE.COM
+- Number of Users: 87
+- Reserved IPs: First 10 IPs
+- Assign to VLAN: 40
 
+<br>
 
-
-CIA Method
-	CONVERT:	
-
-
-	SUBTRACT:
-
+S1
+- IP address: 192.168.52.0/24
+- Domain Name: TELETECH.NET
+- Number of Users: 345
+- Reserved IPs: First 100 IPs
+- Assign to VLAN: 52
 	
-	INSERT(Ipasok):
+<br>
 
-Determine Parts of the Network IP:
-
-	Network IP: 
-	Valid Range:
-		First Valid (Network +1): 
-		Last Valid (Broadcast -1): 
-	Broadcast (Next Network -1): 
-	
-	Next Network (Insert i again):
+S2
+- IP address: 10.67.0.0/16
+- Domain Name: FOUNDEVER.COM
+- Number of Users: 1456
+- Reserved IPs: First 100 IPs
+- Assign to VLAN: 67
 
 
-Implementation:
 
-@CoreBABA
-config t
- vlan 25
-  name _____.com
-  exit
- Int vlan 25
-  no shut
-  ip add _._._._ 255.255._._
- ip dhcp excluded-add 10.0._._ 10.0._._
- ip dhcp pool _____.com
-  network _._._._ 255.255._._
-  default-router 10.0._._
-  domain-name ____.com
-  dns-server 10.#$34T#.1.10
-  option 150 ip 10.#$34T#.100.8
- Int Fa 0/5
-  switchpoprt Voice vlan 25
-  do sh ip dhcp binding
-  
 
-Ex 5. Using RSTVM, subnet for the following:
-  P1
-    Design a network for BSP.COM with 812 users using the 10.24.48.0/24 IP address space. 
-	Reserver the first 70 IP addresses. Assign network to VLAN 35.
-		
-  P2
-    Design a network for ACCENTURE.COM with 87 users using the 172.16.52.0/24 IP address space.
-	Reserve the first 10 IP addresses. Assign network to VLAN 40.
-	
-  S1
-    Design a network for TELETECH.NET with 345 users using the 192.168.0.0/24 IP address spacet.
-	
-  S2
-    Design a network for FOUNDEVER.COM with 1456 users using the 
+
 
 
 Task 4: Subnetting (Subnet)
@@ -582,6 +555,7 @@ Maximize the number of IP addresses.
 
 Ex. 3 Subnet for 20 offices using the Network address 172.16.225.0/19. 
 Maximize the number of IP addresses.
+
 
 
 
