@@ -66,9 +66,9 @@ Send an email from support@daytwo#$34T#.com to user1@daytwo#$34T#.com
 
 # 💻 Network Fundamentals
 
-### 🔢 Counting as a network engineer.
-
 <br>
+
+### 🔢 Counting as a network engineer.
 
 |     | Decimal | IPv4          | IPv6   |
 | --- | ---     | ---           | ---    |
@@ -269,7 +269,9 @@ __Example 03:__
 | /27  |             | (Octet, i)   |             |
 | /14  |             | (Octet, i)   |             |
 
-&nbsp;
+<br>
+<br>
+
 ---
 &nbsp;
 
@@ -330,20 +332,15 @@ __Example 03:__
 - [ ] 10.0.32.0/20
 
 <br>
-
-Given information:
-- __1750 hosts__
-- __10.0.0.0/8__
-
 <br>
 
 ### CIA Method  
-- __CONVERT__
+> __CONVERT__  
   1750 = 11 bits
 
 <br>
 
-- __SUBTRACT__
+> __SUBTRACT__  
   /32 - 11 bits = /21
 
 <br>
@@ -358,17 +355,24 @@ Why /32?
 ### `0 0 0 0  0 0 0 0  .  0 0 0 0  0 0 0 0  .  0 0 0 0  0                           `
 
 </details>
-	
-Therefore, we have a new CIDR = __/21 (Octet, i)__
 
 <br>
 	
-- __INSERT(Ipasok)__  
+> __INSERT (*IPASOK*)__  
+/21 (Octet, i)
+
+<br>
+
 Insert 8 inside the 3rd octet of the given IP address space, 10.0.0.0  
-__10.0.8.0 /21__
 
 <br>
 
+> __10.0.8.0 /21__
+
+<br>
+
+<details>
+	
 |                               |                        |
 | ---                           | ---                    |
 | Network IP                    | 10.0.8.0 255.255.248.0 |
@@ -377,6 +381,8 @@ __10.0.8.0 /21__
 | Broadcast (Next Network -1)   | 10.0.15.255            |
 |                               |                        |
 | Next Network (Insert i again) | 10.0.16.0              |
+
+</details>
 
 <br>
 <br>
@@ -389,60 +395,37 @@ __10.0.8.0 /21__
 - [ ] 172.16.16.0 /23
 - [ ] 172.16.4.0 /22
 - [ ] 172.16.2.0 /23
-	
-<details>
-Given information:
-	160 + 250 + 112 + 100 = 622
-	172.16.0.0/16 
 
 CIA Method
 	CONVERT:	
-	622 = 10 bits
-
 	SUBTRACT:
-	/32 - 10 bits = /22 (3rd, 4i)
-	
 	INSERT(Ipasok):
-	172.16.4.0 /22
 
-Determine Parts of the Network IP:
-
-	Network IP: 172.16.4.0 255.255.252.0
-	Valid Range:
-		First Valid (Network +1): 172.16.4.1
-		Last Valid (Broadcast -1): 172.16.7.254
-	Broadcast (Next Network -1): 172.16.7.255
-	
-	Next Network (Insert i again): 172.16.8.0
-</details>
+|                               |                        |
+| ---                           | ---                    |
+| Network IP                    | 10.0.8.0 255.255.248.0 |
+| First Valid (Network +1)      | 10.0.8.1               |
+| Last Valid (Broadcast -1)     | 10.0.15.254            |
+| Broadcast (Next Network -1)   | 10.0.15.255            |
+|                               |                        |
+| Next Network (Insert i again) | 10.0.16.0              |
 
 
-Ex. 3 Design a network for foundever.com
-with 45 users.
-Use the 192.168.0.0/24 IP address space
-
-Given information:
-
-
+### 🎯 Exercise 05: Design and implement a network for foundever.com with 45 users. Use the 192.168.0.0/24 IP address space
 
 CIA Method
 	CONVERT:	
-
-
 	SUBTRACT:
-
-	
 	INSERT(Ipasok):
 
-Determine Parts of the Network IP:
-
-	Network IP: 
-	Valid Range:
-		First Valid (Network +1): 
-		Last Valid (Broadcast -1): 
-	Broadcast (Next Network -1): 
-	
-	Next Network (Insert i again):
+|                               |                        |
+| ---                           | ---                    |
+| Network IP                    | 10.0.8.0 255.255.248.0 |
+| First Valid (Network +1)      | 10.0.8.1               |
+| Last Valid (Broadcast -1)     | 10.0.15.254            |
+| Broadcast (Next Network -1)   | 10.0.15.255            |
+|                               |                        |
+| Next Network (Insert i again) | 10.0.16.0              |
 	
 	
 Ex. 4 Design and implement a network for teleperformance.com
@@ -555,6 +538,7 @@ Maximize the number of IP addresses.
 
 Ex. 3 Subnet for 20 offices using the Network address 172.16.225.0/19. 
 Maximize the number of IP addresses.
+
 
 
 
