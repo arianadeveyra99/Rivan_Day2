@@ -325,7 +325,7 @@ __Example 03:__
 
 ##  Subnetting (Host)
 
-### 🎯 Exercise 03: Design a network for *accenture.com* with 1750 agents, team leads, project managers, and quality assurance teams. Use the 10.0.0.0/8 IP address space.
+### 🎯 Exercise 03: Design a network for `accenture.com` with 1750 agents, team leads, project managers, and quality assurance teams. Use the 10.0.0.0/8 IP address space.
 - [ ] 10.16.0.0/24
 - [ ] 10.0.4.0/22
 - [ ] 10.0.8.0/21
@@ -390,12 +390,38 @@ Insert 8 inside the 3rd octet of the given IP address space, 10.0.0.0
 ---
 &nbsp;
 
-### 🎯 Exercise 04: Design a network for concentrix.com with 160 admin, 250 managers, 112 executive, 100 security agents. Use the 172.16.0.0/16 IP address space.
+### 🎯 Exercise 04: Design a network for `concentrix.com` with 160 admin, 250 managers, 112 executive, 100 security agents. Use the 172.16.0.0/16 IP address space.
 - [ ] 172.16.8.0 /22
 - [ ] 172.16.16.0 /23
 - [ ] 172.16.4.0 /22
 - [ ] 172.16.2.0 /23
 
+<br>
+
+CIA Method
+	CONVERT:	
+	SUBTRACT:
+	INSERT(Ipasok):
+
+<br>
+
+|                               |                        |
+| ---                           | ---                    |
+| Network IP                    |                        |
+| First Valid (Network +1)      |                        |
+| Last Valid (Broadcast -1)     |                        |
+| Broadcast (Next Network -1)   |                        |
+|                               |                        |
+| Next Network (Insert i again) |                        |
+
+<br>
+<br>
+
+---
+&nbsp;
+
+### 🎯 Exercise 05: Design and implement a network for `foundever.com` with 45 users. Use the 192.168.0.0/24 IP address space
+
 CIA Method
 	CONVERT:	
 	SUBTRACT:
@@ -403,32 +429,48 @@ CIA Method
 
 |                               |                        |
 | ---                           | ---                    |
-| Network IP                    | 10.0.8.0 255.255.248.0 |
-| First Valid (Network +1)      | 10.0.8.1               |
-| Last Valid (Broadcast -1)     | 10.0.15.254            |
-| Broadcast (Next Network -1)   | 10.0.15.255            |
+| Network IP                    |                        |
+| First Valid (Network +1)      |                        |
+| Last Valid (Broadcast -1)     |                        |
+| Broadcast (Next Network -1)   |                        |
 |                               |                        |
-| Next Network (Insert i again) | 10.0.16.0              |
+| Next Network (Insert i again) |                        |
+
+<br>
+<br>
+
+> IMPLEMENTATION
+
+~~~cisco
+config t
+ vlan 25
+  name _____.com
+  exit
+ int vlan 25
+  no shut
+  ip add __.__.__.__  __.__.__.__
+ ip dhcp excluded-add __.__.__.__  __.__.__.__
+ ip dhcp pool _____.com
+  network __.__.__.__  __.__.__.__
+  default-router __.__.__.__
+  domain-name _____.com
+  dns-server 10.#$34T#.1.10
+  option 150 ip 10.#$34T#.100.8
+ int fa 0/5
+  switchport voice vlan 25
+  end
+show ip dhcp binding
+~~~
+
+<br>
+<br>
+
+---
+&nbsp;
 
 
-### 🎯 Exercise 05: Design and implement a network for foundever.com with 45 users. Use the 192.168.0.0/24 IP address space
+### 🎯 Exercise 06: Design and implement networks.
 
-CIA Method
-	CONVERT:	
-	SUBTRACT:
-	INSERT(Ipasok):
-
-|                               |                        |
-| ---                           | ---                    |
-| Network IP                    | 10.0.8.0 255.255.248.0 |
-| First Valid (Network +1)      | 10.0.8.1               |
-| Last Valid (Broadcast -1)     | 10.0.15.254            |
-| Broadcast (Next Network -1)   | 10.0.15.255            |
-|                               |                        |
-| Next Network (Insert i again) | 10.0.16.0              |
-	
-	
-Ex. 4 Design and implement a network for teleperformance.com
 with 72 users.
 Use the 192.168.0.0/24 IP address space
 
@@ -471,10 +513,10 @@ config t
   network _._._._ 255.255._._
   default-router 10.0._._
   domain-name ____.com
-  dns-server 10.m.1.10
-  option 150 ip 10.m.100.8
- Int Fa 0/7
-  swi Voice vlan 25
+  dns-server 10.#$34T#.1.10
+  option 150 ip 10.#$34T#.100.8
+ Int Fa 0/5
+  switchpoprt Voice vlan 25
   do sh ip dhcp binding
   
 
@@ -538,6 +580,7 @@ Maximize the number of IP addresses.
 
 Ex. 3 Subnet for 20 offices using the Network address 172.16.225.0/19. 
 Maximize the number of IP addresses.
+
 
 
 
