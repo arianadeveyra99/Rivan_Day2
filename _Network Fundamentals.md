@@ -439,9 +439,9 @@ CIA Method
 <br>
 <br>
 
-> IMPLEMENTATION
+__IMPLEMENTATION__
 
-~~~cisco
+~~~
 config t
  vlan 25
   name _____.com
@@ -580,6 +580,7 @@ Maximize the number of IP addresses.
 
 Ex. 3 Subnet for 20 offices using the Network address 172.16.225.0/19. 
 Maximize the number of IP addresses.
+
 
 
 
