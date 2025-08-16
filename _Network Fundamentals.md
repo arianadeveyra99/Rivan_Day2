@@ -269,28 +269,41 @@ __Example 03:__
 
 ## 0️⃣ Bit Length
 
-### 0 0 0 0  0 0 0 0    0 0 0 0  0 0 0 0   
+### `0 0 0 0  0 0 0 0    0 0 0 0  0 0 0 0`
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 &nbsp;
 ---
 &nbsp;
   
 ### Exercise 02: Find the Bit Length
-195 =  
-13 =  
-1750 =  
-1855 =  
-2,700 =  
-2 =  
-376 =  
-888 =  
-8 =  
-212 =   
-4,500 =  
-81 =  
-20,000 =  
-55 =  
-your age =  
+| Value    | Bits |
+| ---      | ---  |
+| 195      |      |
+| 13       |      |
+| 1750     |      |
+| 1855     |      |
+| 2700     |      |
+| 2        |      |
+| 376      |      |
+| 888      |      |
+| 8        |      |
+| 212      |      |
+| 4,500    |      |
+| 81       |      |
+| 20,000   |      |
+| 55       |      |
+| your age |      |
 
 <br>
 <br>
@@ -525,6 +538,7 @@ Maximize the number of IP addresses.
 
 Ex. 3 Subnet for 20 offices using the Network address 172.16.225.0/19. 
 Maximize the number of IP addresses.
+
 
 
 
