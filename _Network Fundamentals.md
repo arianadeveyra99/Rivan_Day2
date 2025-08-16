@@ -334,24 +334,32 @@ Given information:
 CONVERT:
   1750 = 11 bits
 
+<br>
+
 SUBTRACT:
   /32 - 11 bits = /21
-  
-  Why /32?  
-  
+
+<details>
+
+Why /32?  
+ 
 ### `0 0 0 0  0 0 0 0  .  0 0 0 0  0 0 0 0  .  0 0 0 0  0 0 0 0  .  0 0 0 0  0 0 0 0`
 ### `                                                     0 0 0     0 0 0 0  0 0 0 0`
 ### `_______________________________________________________________________________`
 ### `0 0 0 0  0 0 0 0  .  0 0 0 0  0 0 0 0  .  0 0 0 0  0                           `
+
+</details>
 	
+Therefore, we have a new CIDR = /21 (3rd Octet, 8i)
+
+ <br>
 	
-	Therefore, we have a new CIDR = /21 (3rd Octet, 8i)
-	
-	
-	INSERT(Ipasok):
-	Insert 8 inside the 3rd octet of the given IP address space, 10.0.0.0.
-	
-	10.0.8.0 /21
+INSERT(Ipasok):
+Insert 8 inside the 3rd octet of the given IP address space, 10.0.0.0  
+__10.0.8.0 /21__
+
+<br>
+
 
 Determine Parts of the Network IP:
 
@@ -539,6 +547,7 @@ Maximize the number of IP addresses.
 
 Ex. 3 Subnet for 20 offices using the Network address 172.16.225.0/19. 
 Maximize the number of IP addresses.
+
 
 
 
