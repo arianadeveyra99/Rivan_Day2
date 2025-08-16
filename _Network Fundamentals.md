@@ -331,13 +331,15 @@ Given information:
 <br>
 
 ### CIA Method  
-CONVERT:
+- __CONVERT__
   1750 = 11 bits
 
 <br>
 
-SUBTRACT:
+- __SUBTRACT__
   /32 - 11 bits = /21
+
+<br>
 
 <details>
 
@@ -350,23 +352,24 @@ Why /32?
 
 </details>
 	
-Therefore, we have a new CIDR = /21 (3rd Octet, 8i)
+Therefore, we have a new CIDR = __/21 (Octet, i)__
 
- <br>
+<br>
 	
-INSERT(Ipasok):
+- __INSERT(Ipasok)__  
 Insert 8 inside the 3rd octet of the given IP address space, 10.0.0.0  
 __10.0.8.0 /21__
 
 <br>
 
-Network IP: 10.0.8.0 255.255.248.0  
-Valid Range:  
-- First Valid (Network +1): 10.0.8.1  
-- Last Valid (Broadcast -1): 10.0.15.254  
-Broadcast (Next Network -1): 10.0.15.255  
-	
-Next Network (Insert i again): 10.0.16.0  
+|                               |                        |
+| ---                           | ---                    |
+| Network IP                    | 10.0.8.0 255.255.248.0 |
+| First Valid (Network +1)      | 10.0.8.1               |
+| Last Valid (Broadcast -1)     | 10.0.15.254            |
+| Broadcast (Next Network -1)   | 10.0.15.255            |
+|                               |                        |
+| Next Network (Insert i again) | 10.0.16.0              |
 
 &nbsp;
 ---
@@ -543,6 +546,7 @@ Maximize the number of IP addresses.
 
 Ex. 3 Subnet for 20 offices using the Network address 172.16.225.0/19. 
 Maximize the number of IP addresses.
+
 
 
 
