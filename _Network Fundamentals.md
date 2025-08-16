@@ -32,7 +32,10 @@ ping 10.k.1.2		        Klassmate's CoreTAAS
 ping 10.k.1.10		        Klassmate's PC
 ~~~
 
-Your Branch must be able to call other klassmates
+Your Branch must be able to call other klassmates  
+
+<br>
+
 View your cameras:
   - http://10.#$34T#.50.6
   - http://10.#$34T#.50.8
@@ -42,17 +45,17 @@ View your cameras:
 &nbsp;
 
 ### Configure DNS
-Create DNS zones & records for day2#$34T#.com			#$34T# = your monitor number
-Create a website for day2#$34T#.com
+Create DNS zones & records for daytwo#$34T#.com			#$34T# = your monitor number
+Create a website for daytwo#$34T#.com
 Create an email for
 | Email                     | Name           |
 | ---                       | ---            |
-| support@day2#$34T#.com    | Rivan Support  |
-| user1@day2#$34T#.com      | User1          |
+| support@daytwo#$34T#.com    | Rivan Support  |
+| user1@daytwo#$34T#.com      | User1          |
 
 <br>
 
-Send an email from support@day2#$34T#.com to user1@day2#$34T#.com
+Send an email from support@daytwo#$34T#.com to user1@daytwo#$34T#.com
 
 <br>
 <br>
@@ -145,7 +148,11 @@ over a maximum of 30 hops:
 ---
 &nbsp;
 
-__Private IP address__
+__Private IP address__  
+*Why do big companies uses the IP addresses that starts with 10.x.x.x ? *
+
+<br>
+
 | Class | IP Range                        | No. of Host |
 | ---   | ---                             | ---         |
 | A     | 10.0.0.0 - 10.255.255.255       | 16,777,214  |
@@ -524,6 +531,7 @@ Maximize the number of IP addresses.
 
 Ex. 3 Subnet for 20 offices using the Network address 172.16.225.0/19. 
 Maximize the number of IP addresses.
+
 
 
 
