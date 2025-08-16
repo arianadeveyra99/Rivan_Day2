@@ -399,9 +399,9 @@ Insert 8 inside the 3rd octet of the given IP address space, 10.0.0.0
 <br>
 
 CIA Method
-	CONVERT:	
-	SUBTRACT:
-	INSERT(Ipasok):
+- CONVERT:	
+- SUBTRACT:
+- INSERT(Ipasok):
 
 <br>
 
@@ -423,9 +423,11 @@ CIA Method
 ### 🎯 Exercise 05: Design and implement a network for `foundever.com` with 45 users. Use the 192.168.0.0/24 IP address space
 
 CIA Method
-	CONVERT:	
-	SUBTRACT:
-	INSERT(Ipasok):
+- CONVERT:	
+- SUBTRACT:
+- INSERT(Ipasok):
+
+<br>
 
 |                               |                        |
 | ---                           | ---                    |
@@ -580,6 +582,7 @@ Maximize the number of IP addresses.
 
 Ex. 3 Subnet for 20 offices using the Network address 172.16.225.0/19. 
 Maximize the number of IP addresses.
+
 
 
 
