@@ -322,25 +322,27 @@ __Example 03:__
 - [ ] 10.0.8.0/21
 - [ ] 10.0.32.0/20
 
+<br>
 
 Given information:
-	1750 hosts
-	10.0.0.0/8
-	
-	
-CIA Method
-	CONVERT:	
-	1750 = 11 bits
+- __1750 hosts__
+- __10.0.0.0/8__
 
-	SUBTRACT:
-	/32 - 11 bits = /21
-	
-	Why /32?
-	
-	0 0 0 0  0 0 0 0  .  0 0 0 0  0 0 0 0  .  0 0 0 0  0 0 0 0  .  0 0 0 0  0 0 0 0
-	                                                     0 0 0     0 0 0 0  0 0 0 0
-	_______________________________________________________________________________
-	0 0 0 0  0 0 0 0  .  0 0 0 0  0 0 0 0  .  0 0 0 0  0 = Network Bits
+<br>
+
+### CIA Method  
+CONVERT:
+  1750 = 11 bits
+
+SUBTRACT:
+  /32 - 11 bits = /21
+  
+  Why /32?  
+  
+### 0 0 0 0  0 0 0 0  .  0 0 0 0  0 0 0 0  .  0 0 0 0  0 0 0 0  .  0 0 0 0  0 0 0 0
+###                                                      0 0 0     0 0 0 0  0 0 0 0
+### _______________________________________________________________________________
+### 0 0 0 0  0 0 0 0  .  0 0 0 0  0 0 0 0  .  0 0 0 0  0
 	
 	
 	Therefore, we have a new CIDR = /21 (3rd Octet, 8i)
@@ -537,6 +539,7 @@ Maximize the number of IP addresses.
 
 Ex. 3 Subnet for 20 offices using the Network address 172.16.225.0/19. 
 Maximize the number of IP addresses.
+
 
 
 
