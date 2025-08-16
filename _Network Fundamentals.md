@@ -257,6 +257,8 @@ __Example 03:__
 
 ### 🎯 Exercise 01: Convert CIDR to various formats
 
+<br>
+
 | CIDR | NETMASK     | RIVAN Format | WILDCARD    |
 | ---  | ---         | ---          | ---         |
 | /20  |             | (Octet, i)   |             |
@@ -287,6 +289,9 @@ __Example 03:__
 &nbsp;
   
 ### 🎯 Exercise 02: Find the Bit Length
+
+<br>
+
 | Value     | Bits |
 | ---       | ---  |
 | 195       |      |
@@ -536,6 +541,7 @@ Maximize the number of IP addresses.
 
 Ex. 3 Subnet for 20 offices using the Network address 172.16.225.0/19. 
 Maximize the number of IP addresses.
+
 
 
 
