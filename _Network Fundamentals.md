@@ -316,15 +316,11 @@ __Example 03:__
 
 ##  Subnetting (Host)
 
-Ex. 1 Design a network for accenture.com 
-with 1750 agents, team leads, project managers, 
-and quality assurance teams. 
-Use the 10.0.0.0/8 IP address space
-
-	A. 10.16.0.0/24
-	B. 10.0.4.0/22
-	C. 10.0.8.0/21
-	D. 10.0.32.0/20
+### 🎯 Exercise 03: Design a network for *accenture.com* with 1750 agents, team leads, project managers, and quality assurance teams. Use the 10.0.0.0/8 IP address space.
+- [ ] 10.16.0.0/24
+- [ ] 10.0.4.0/22
+- [ ] 10.0.8.0/21
+- [ ] 10.0.32.0/20
 
 
 Given information:
@@ -541,6 +537,7 @@ Maximize the number of IP addresses.
 
 Ex. 3 Subnet for 20 offices using the Network address 172.16.225.0/19. 
 Maximize the number of IP addresses.
+
 
 
 
