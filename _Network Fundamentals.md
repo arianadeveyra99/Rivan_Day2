@@ -102,7 +102,7 @@ Send an email from support@daytwo#$34T#.com to user1@daytwo#$34T#.com
 
 <br>
 
-__Public IP address__
+### Public IP address
 | Class | IP Range                    |
 | ---   | ---                         |
 | A     | 1.0.0.0 - 126.255.255.255   |
@@ -121,6 +121,9 @@ ping 4.4.1.1
 
 tracert 8.8.8.8
 ~~~
+
+<br>
+<br>
 
 <details>
 	
@@ -147,7 +150,7 @@ over a maximum of 30 hops:
 ---
 &nbsp;
 
-__Private IP address__  
+### Private IP address  
 *Why do big companies uses the IP addresses that starts with 10.x.x.x ? *
 
 <br>
@@ -252,7 +255,7 @@ __Example 03:__
 ---
 &nbsp;
 
-### Exercise 01: Convert CIDR to various formats
+### 🎯 Exercise 01: Convert CIDR to various formats
 
 | CIDR | NETMASK     | RIVAN Format | WILDCARD    |
 | ---  | ---         | ---          | ---         |
@@ -283,7 +286,7 @@ __Example 03:__
 ---
 &nbsp;
   
-### Exercise 02: Find the Bit Length
+### 🎯 Exercise 02: Find the Bit Length
 | Value     | Bits |
 | ---       | ---  |
 | 195       |      |
@@ -533,6 +536,7 @@ Maximize the number of IP addresses.
 
 Ex. 3 Subnet for 20 offices using the Network address 172.16.225.0/19. 
 Maximize the number of IP addresses.
+
 
 
 
