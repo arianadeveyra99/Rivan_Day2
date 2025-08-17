@@ -178,6 +178,17 @@ over a maximum of 30 hops:
 
 <br>
 <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+![FingerMethod](https://github.com/user-attachments/assets/f0fec3c1-afd1-46d7-9d92-204dce869fef)
+
+<br>
+<br>
 
 __Example 01:__
 <details>
@@ -296,6 +307,9 @@ __Example 03:__
   
 ### 🎯 Exercise 02: Find the Bit Length
 
+![BitLength](https://github.com/user-attachments/assets/db133000-4eaf-47b6-a781-b3fafe71edf4)
+
+<br>
 <br>
 
 | Value     | Bits |
@@ -566,6 +580,7 @@ Maximize the number of IP addresses.
 
 Ex. 3 Subnet for 20 offices using the Network address 172.16.225.0/19. 
 Maximize the number of IP addresses.
+
 
 
 
