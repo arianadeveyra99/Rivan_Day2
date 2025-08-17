@@ -185,7 +185,8 @@ over a maximum of 30 hops:
 <br>
 <br>
 
-![FingerMethod](https://github.com/user-attachments/assets/f0fec3c1-afd1-46d7-9d92-204dce869fef)
+![FingerMethod](https://github.com/user-attachments/assets/255b870a-6a3f-4fd0-a06b-214550f9cbdc)
+
 
 <br>
 <br>
@@ -288,7 +289,8 @@ __Example 03:__
 
 ## 0️⃣ Bit Length
 
-![BitLength](https://github.com/user-attachments/assets/db133000-4eaf-47b6-a781-b3fafe71edf4)
+![BitLength](https://github.com/user-attachments/assets/13d30011-f764-419c-a463-d77450fd0c65)
+
 
 
 &nbsp;
@@ -568,6 +570,7 @@ Maximize the number of IP addresses.
 
 Ex. 3 Subnet for 20 offices using the Network address 172.16.225.0/19. 
 Maximize the number of IP addresses.
+
 
 
 
