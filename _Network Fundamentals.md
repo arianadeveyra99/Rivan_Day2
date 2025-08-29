@@ -694,18 +694,55 @@ NEXT NETWORK: 192.168.128.32 /27
 
 ### 🎯 Exercise 08: Subnet for 20 offices using the Network address 172.16.225.0/19. Maximize the number of IP addresses.
 
-&nbsp;
+CAI Method
+- CONVERT:	
+- ADD:
+- INSERT(Ipasok):
+
+<br>
+
+Offices:
+1. &nbsp;
+2. &nbsp;
+3. &nbsp;
+4. &nbsp;
+5. &nbsp;
+6. &nbsp;
+7. &nbsp;
+8. &nbsp;
+9. &nbsp;
+10. &nbsp;
+11. &nbsp;
+12. &nbsp;
+13. &nbsp;
+14. &nbsp;
+15. &nbsp;
+16. &nbsp;
+17. &nbsp;
+18. &nbsp;
+19. &nbsp;
+20. &nbsp;
+
+<br>
+<br>
+
 ---
 &nbsp;
 
-### 🎯 Exercise 09: Subnet for 20 offices using the Network address 172.16.225.0/19. Maximize the number of IP addresses.
+### 🎯 Exercise 09: Subnet for 4 offices using the Network address 172.16.225.0/19. Maximize the number of IP addresses.
 
-&nbsp;
----
-&nbsp;
+CAI Method
+- CONVERT:	
+- ADD:
+- INSERT(Ipasok):
 
+<br>
 
-
+Offices:
+1. &nbsp;
+2. &nbsp;
+3. &nbsp;
+4. &nbsp;
 
 
 
