@@ -729,7 +729,7 @@ Offices:
 ---
 &nbsp;
 
-### 🎯 Exercise 09: Subnet for 4 offices using the Network address 172.16.225.0/19. Maximize the number of IP addresses.
+### 🎯 Exercise 09: Design and Implement 4 offices using the Network address 172.16.224.0/19. Maximize the number of IP addresses.
 
 CAI Method
 - CONVERT:	
@@ -744,7 +744,11 @@ Offices:
 3. &nbsp;
 4. &nbsp;
 
+&nbsp;
+---
+&nbsp;
 
+![ValidRangeRST](img/ValidRange.png)
 
 
 
