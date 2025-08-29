@@ -563,8 +563,10 @@ config t
   name _____.com
   exit
  int vlan 25
-  no shut
   ip add __.__.__.__  __.__.__.__
+  ip ospf 1 area 0
+  no shut
+  exit
  ip dhcp excluded-add __.__.__.__  __.__.__.__
  ip dhcp pool _____.com
   network __.__.__.__  __.__.__.__
@@ -574,6 +576,8 @@ config t
   option 150 ip 10.#$34T#.100.8
  int fa 0/5
   switchport voice vlan 25
+  shut
+  no shut
   end
 show ip dhcp binding
 ~~~
@@ -681,6 +685,7 @@ Maximize the number of IP addresses.
 
 Ex. 3 Subnet for 20 offices using the Network address 172.16.225.0/19. 
 Maximize the number of IP addresses.
+
 
 
 
