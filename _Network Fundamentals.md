@@ -636,6 +636,14 @@ S2
 
 ## Subnetting (Subnet)
 
+![BitLength](https://github.com/user-attachments/assets/13d30011-f764-419c-a463-d77450fd0c65)
+
+
+
+&nbsp;
+---
+&nbsp;
+
 ### `0 0 0 0   1 0 1 0   .   0 0 1 0   0 0 1 0   .   1 0 0 0   0 0 0 0   .   0 0 0 0   0 0 0 0`
 
 ### `1 1 1 1   1 1 1 1   .   1 1 1 1   1 1 1 1   .   1 1 0 0   0 0 0 0   .   0 0 0 0   0 0 0 0`
@@ -689,6 +697,7 @@ Maximize the number of IP addresses.
 
 Ex. 3 Subnet for 20 offices using the Network address 172.16.225.0/19. 
 Maximize the number of IP addresses.
+
 
 
 
