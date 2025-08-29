@@ -636,13 +636,13 @@ S2
 
 ## Subnetting (Subnet)
 
-![RANGE](img/Range.png)
+![BitLength](img/BitLength.png)
 
 &nbsp;
 ---
 &nbsp;
 
-![BitLength](img/BitLength.png)
+![RANGE](img/Range.png)
 
 <br>
 <br>
@@ -749,6 +749,7 @@ Offices:
 &nbsp;
 
 ![ValidRangeRST](img/ValidRange.png)
+
 
 
 
