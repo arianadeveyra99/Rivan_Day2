@@ -293,7 +293,7 @@ over a maximum of 30 hops:
 <br>
 <br>
 
-![FingerMethod](https://github.com/user-attachments/assets/255b870a-6a3f-4fd0-a06b-214550f9cbdc)
+![FingerMethod](img/IPv4_Finger.png)
 
 
 <br>
@@ -400,7 +400,7 @@ __Example 03:__
 
 ## 0️⃣ Bit Length
 
-![BitLength](https://github.com/user-attachments/assets/13d30011-f764-419c-a463-d77450fd0c65)
+![BitLength](img/BitLength.png)
 
 
 
@@ -636,7 +636,7 @@ S2
 
 ## Subnetting (Subnet)
 
-![BitLength](https://github.com/user-attachments/assets/13d30011-f764-419c-a463-d77450fd0c65)
+![BitLength](img/Range.png)
 
 
 
@@ -697,6 +697,7 @@ Maximize the number of IP addresses.
 
 Ex. 3 Subnet for 20 offices using the Network address 172.16.225.0/19. 
 Maximize the number of IP addresses.
+
 
 
 
