@@ -486,6 +486,7 @@ Insert 8 inside the 3rd octet of the given IP address space, 10.0.0.0
 <br>
 
 <details>
+<summary>IP Values</summary>
 	
 |                               |                        |
 | ---                           | ---                    |
@@ -680,6 +681,7 @@ Maximize the number of IP addresses.
 
 Ex. 3 Subnet for 20 offices using the Network address 172.16.225.0/19. 
 Maximize the number of IP addresses.
+
 
 
 
