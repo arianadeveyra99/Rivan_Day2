@@ -604,7 +604,7 @@ P1
 <br>
 
 P1
-- IP address: 172.16.87.0/16
+- IP address: 172.16.64.0/18
 - Domain Name: ACCENTURE.COM
 - Number of Users: 87
 - Reserved IPs: First 10 IPs
@@ -622,7 +622,7 @@ S1
 <br>
 
 S2
-- IP address: 10.67.0.0/16
+- IP address: 10.67.48.0/20
 - Domain Name: FOUNDEVER.COM
 - Number of Users: 1456
 - Reserved IPs: First 100 IPs
@@ -689,6 +689,7 @@ Maximize the number of IP addresses.
 
 Ex. 3 Subnet for 20 offices using the Network address 172.16.225.0/19. 
 Maximize the number of IP addresses.
+
 
 
 
