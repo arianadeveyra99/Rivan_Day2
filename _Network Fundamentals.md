@@ -64,6 +64,8 @@ Send an email from support@daytwo#$34T#.com to user1@daytwo#$34T#.com
 ---
 &nbsp;
 
+# 🎯 Review
+
 ### 1. A Cisco IP phone receives untagged data traffic from an attached PC. Which action is taken by the phone?
   - [ ] __A.__ It drops the traffic.
   - [ ] __B.__ It allows the traffic to pass through unchanged.
@@ -675,6 +677,7 @@ Maximize the number of IP addresses.
 
 Ex. 3 Subnet for 20 offices using the Network address 172.16.225.0/19. 
 Maximize the number of IP addresses.
+
 
 
 
