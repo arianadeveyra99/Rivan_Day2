@@ -636,9 +636,17 @@ S2
 
 ## Subnetting (Subnet)
 
-![BitLength](img/Range.png)
+![RANGE](img/Range.png)
 
 &nbsp;
+---
+&nbsp;
+
+![BitLength](img/BitLength.png)
+
+<br>
+<br>
+
 ---
 &nbsp;
 
@@ -669,14 +677,14 @@ __INSERT(*IPASOK*)__
 
 <br>
 
-	From the NETWORK: 192.168.128.0 /27 (4th, 32i)  
-	Valid Range:  
-		FIRST VALID: 192.168.128.1 /27  
-		LAST VALID: 192.168.128.30   
-		LAST IP/BROADCAST: 192.168.128.31  
+From the NETWORK: 192.168.128.0 /27 (4th, 32i)  
+Valid Range:  
+- FIRST VALID: 192.168.128.1 /27  
+- LAST VALID: 192.168.128.30   
+- LAST IP/BROADCAST: 192.168.128.31  
 
 <br>
-	NEXT NETWORK: 192.168.128.32 /27  
+NEXT NETWORK: 192.168.128.32 /27  
 
 <br>
 <br>
@@ -684,19 +692,18 @@ __INSERT(*IPASOK*)__
 ---
 &nbsp;
 
-Ex. 2 Subnet for 20 offices using the Network address 172.16.225.0/19. 
-Maximize the number of IP addresses.
+### 🎯 Exercise 08: Subnet for 20 offices using the Network address 172.16.225.0/19. Maximize the number of IP addresses.
 
 &nbsp;
 ---
 &nbsp;
 
-Ex. 3 Subnet for 20 offices using the Network address 172.16.225.0/19. 
-Maximize the number of IP addresses.
+### 🎯 Exercise 09: Subnet for 20 offices using the Network address 172.16.225.0/19. Maximize the number of IP addresses.
 
 &nbsp;
 ---
 &nbsp;
+
 
 
 
