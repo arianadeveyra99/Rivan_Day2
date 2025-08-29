@@ -64,6 +64,111 @@ Send an email from support@daytwo#$34T#.com to user1@daytwo#$34T#.com
 ---
 &nbsp;
 
+### 1. A Cisco IP phone receives untagged data traffic from an attached PC. Which action is taken by the phone?
+  - [ ] __A.__ It drops the traffic.
+  - [ ] __B.__ It allows the traffic to pass through unchanged.
+  - [ ] __C.__ It tags the traffic with the native VLAN.
+  - [ ] __D.__ It tags the traffic with the default VLAN
+
+&nbsp;
+---
+&nbsp;
+
+### 5. Which command can you enter to determine the addresses that have been assigned on a DHCP Server?
+  - [ ] __A.__ Show ip DHCP database.
+  - [ ] __B.__ Show ip DHCP pool.
+  - [ ] __C.__ Show ip DHCP binding.
+  - [ ] __D.__ Show ip DHCP server statistic.
+
+&nbsp;
+---
+&nbsp;
+
+### 3. Which two VLAN IDs indicate a default VLAN? (Choose two.)
+  - [ ] __A.__ 0
+  - [ ] __B.__ 1
+  - [ ] __C.__ 1005
+  - [ ] __D.__ 1006
+  - [ ] __E.__ 4096
+
+&nbsp;
+---
+&nbsp;
+
+### 4. Which command prevents passwords from being stored in the configuration as plain text on a router or switch?
+  - [ ] __A.__ enable secret
+  - [ ] __B.__ enable password
+  - [ ] __C.__ service password-encryption
+  - [ ] __D.__ username cisco password encrypt
+
+&nbsp;
+---
+&nbsp;
+
+### 5. What is the primary function of a Layer 3 device?
+  - [ ] __A.__ to transmit wireless traffic between hosts.
+  - [ ] __B.__ to analyze traffic and drop unauthorized traffic from the Internet.
+  - [ ] __C.__ to forward traffic within the same broadcast domain.
+  - [ ] __D.__ to pass traffic between different networks.
+
+&nbsp;
+---
+&nbsp;
+
+### 6. Which option about JSON is true
+  - [ ] __A.__ uses predefined tags or angle brackets () to delimit markup text
+  - [ ] __B.__ used to describe structured data that includes arrays
+  - [ ] __C.__ used for storing information
+  - [ ] __D.__ similar to HTML, it is more verbose than XML
+
+&nbsp;
+---
+&nbsp;
+
+### 7. Which output displays a JSON data representation?
+Which of the following is the JSON encoding of a dictionary or hash?
+  - [ ] __A.__ {“key”: “value”}
+  - [ ] __B.__ [“key”, “value”]
+  - [ ] __C.__ {“key”, “value”}
+  - [ ] __D.__ (“key”: “value”)
+
+&nbsp;
+---
+&nbsp;
+
+### 8. What are two functions of a Layer 2 switch? (Choose two.)
+  - [ ] __A.__ acts as a central point for association and authentication servers.
+  - [ ] __B.__ selects the best route between networks on a WAN.
+  - [ ] __C.__ moves packets within a VLAN.
+  - [ ] __D.__ moves packets between different VLANs.
+  - [ ] __E.__ makes forwarding decisions based on the MAC address of a packet.
+
+&nbsp;
+---
+&nbsp;
+
+### 9. Using direct sequence spread spectrum, which three 2.4-GHz channels are used to limit collisions?
+  - [ ] __A.__ 5, 6, 7
+  - [ ] __B.__ 1, 2, 3
+  - [ ] __C.__ 1, 6, 11
+  - [ ] __D.__ 1, 5, 10
+
+&nbsp;
+---
+&nbsp;
+
+### 10. When should an engineer implement a collapsed-core architecture?
+  - [ ] __A.__ Only when using VSS technology
+  - [ ] __B.__ For small networks with minimal need for growth
+  - [ ] __C.__ For large networks that are connected to multiple remote sites
+  - [ ] __D.__ The access and distribution layers must be on the same device
+
+<br>
+<br>
+
+---
+&nbsp;
+
 # 💻 Network Fundamentals
 
 <br>
@@ -570,6 +675,7 @@ Maximize the number of IP addresses.
 
 Ex. 3 Subnet for 20 offices using the Network address 172.16.225.0/19. 
 Maximize the number of IP addresses.
+
 
 
 
