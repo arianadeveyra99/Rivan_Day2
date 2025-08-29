@@ -301,6 +301,7 @@ over a maximum of 30 hops:
 
 __Example 01:__
 <details>
+<summary>192.168.20.1 /24</summary>
 	
 ### `1 1 0 0   0 0 0 0   .   1 0 1 0   1 0 0 0   .   0 0 0 1   0 1 0 0   .   0 0 0 0   0 0 0 1`
 
@@ -318,6 +319,7 @@ __Example 01:__
 
 __Example 02:__
 <details>
+<summary>10.100.22.205 /30</summary>
 	
 ### `0 0 0 0   1 0 1 0   .   0 1 1 0   0 1 0 0   .   0 0 0 1   0 1 1 0   .   1 1 0 0   1 1 0 1`
 
@@ -335,8 +337,9 @@ __Example 02:__
 
 __Example 03:__
 <details>
+<summary>172.16.40.1 /21</summary>
 	
-### `1 0 1 0   1 1 0 0   .   0 0 0 1   0 0 0 0   .   0 0 1 0   1 0 1 0   .   1 1 0 0   1 1 0 1`
+### `1 0 1 0   1 1 0 0   .   0 0 0 1   0 0 0 0   .   0 0 1 0   1 0 0 0   .   0 0 0 0   0 0 0 1`
 
 ### `1 1 1 1   1 1 1 1   .   1 1 1 1   1 1 1 1   .   1 1 1 1   1 0 0 0   .   0 0 0 0   0 0 0 0`
 
@@ -678,6 +681,7 @@ Maximize the number of IP addresses.
 
 Ex. 3 Subnet for 20 offices using the Network address 172.16.225.0/19. 
 Maximize the number of IP addresses.
+
 
 
 
