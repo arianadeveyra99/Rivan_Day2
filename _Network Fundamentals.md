@@ -590,6 +590,10 @@ show ip dhcp binding
 
 
 ### 🎯 Exercise 06: Design and implement networks.
+![DHCP](img/DHCP.png)
+
+<br>
+
 P1
 - IP address: 10.35.0.0/16
 - Domain Name: BSP.COM
@@ -685,6 +689,7 @@ Maximize the number of IP addresses.
 
 Ex. 3 Subnet for 20 offices using the Network address 172.16.225.0/19. 
 Maximize the number of IP addresses.
+
 
 
 
