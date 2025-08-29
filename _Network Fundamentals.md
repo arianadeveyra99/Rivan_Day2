@@ -645,7 +645,6 @@ S2
 ### 🎯 Exercise 07: Subnet for 8 offices using the Network address 192.168.128.0/27  Maximize the number of IP addresses.
 
 <br>
-<br>
 
 ### CAI Method  
 __CONVERT *(Bit Value. NOT Length)*__  
@@ -670,18 +669,14 @@ __INSERT(*IPASOK*)__
 
 <br>
 
-  Next Network: 192.168.128.32 /30  
-
-<br>
-
-	From the network 192.168.128.0 /27 (4th, 32i)  
+	From the NETWORK: 192.168.128.0 /27 (4th, 32i)  
 	Valid Range:  
-		First Valid: 192.168.128.1 /27  
-		Last Valid 192.168.128.30   
-		Broadcast: 192.168.128.31  
+		FIRST VALID: 192.168.128.1 /27  
+		LAST VALID: 192.168.128.30   
+		LAST IP/BROADCAST: 192.168.128.31  
 
 <br>
-	Next Network: 192.168.128.32 /27  
+	NEXT NETWORK: 192.168.128.32 /27  
 
 <br>
 <br>
@@ -692,12 +687,16 @@ __INSERT(*IPASOK*)__
 Ex. 2 Subnet for 20 offices using the Network address 172.16.225.0/19. 
 Maximize the number of IP addresses.
 
-
-
+&nbsp;
+---
+&nbsp;
 
 Ex. 3 Subnet for 20 offices using the Network address 172.16.225.0/19. 
 Maximize the number of IP addresses.
 
+&nbsp;
+---
+&nbsp;
 
 
 
