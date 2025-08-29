@@ -638,56 +638,56 @@ S2
 
 ![BitLength](img/Range.png)
 
-
-
 &nbsp;
 ---
 &nbsp;
 
-### `0 0 0 0   1 0 1 0   .   0 0 1 0   0 0 1 0   .   1 0 0 0   0 0 0 0   .   0 0 0 0   0 0 0 0`
-
-### `1 1 1 1   1 1 1 1   .   1 1 1 1   1 1 1 1   .   1 1 0 0   0 0 0 0   .   0 0 0 0   0 0 0 0`
+### 🎯 Exercise 07: Subnet for 8 offices using the Network address 192.168.128.0/27  Maximize the number of IP addresses.
 
 <br>
 <br>
-
-### Subnet for 8 offices using the Network address 192.168.128.0/27  Maximize the number of IP addresses.
-
-### `1 1 0 0   0 0 0 0   .   1 0 1 0   0 1 0 0   .   1 0 0 0   0 0 0 0   .   0 0 0 0   0 0 0 0`
-
-### `1 1 1 1   1 1 1 1   .   1 1 1 1   1 1 1 1   .   1 1 1 1   1 1 1 1   .   1 1 1 0   0 0 0 0`
 
 ### CAI Method  
-__CONVERT *(Bit Value. NOT Length)*__
-  8 = 3 bits
+__CONVERT *(Bit Value. NOT Length)*__  
+  8 = 3 bits  
 
 <br>
 
-__ADD__
-  /27 + 3 bits = /30 (4th, 4i)
+__ADD__  
+  /27 + 3 bits = /30 (4th, 4i)  
 
 <br>
 
-__INSERT(*IPASOK*)__
-  1st Office: 192.168.128.0 /30
-  2nd Office: 192.168.128.4 /30
-  3rd Office: 192.168.128.8 /30
-  4th Office: 192.168.128.12 /30
-  5th Office: 192.168.128.16 /30
-  6th Office: 192.168.128.20 /30
-  7th Office: 192.168.128.24 /30
-  8th Office: 192.168.128.28 /30
-  
-  9th Office: 192.168.128.32 /30
-	
-	From the network 192.168.128.0 /27 (4th, 32i)
-	Valid Range:
-		First Valid: 192.168.128.1 /27
-		Last Valid 192.168.128.30 
-		Broadcast: 192.168.128.31
-	
-	Next Network: 192.168.128.32 /27
+__INSERT(*IPASOK*)__  
+  1st Office: 192.168.128.0 /30  
+  2nd Office: 192.168.128.4 /30  
+  3rd Office: 192.168.128.8 /30  
+  4th Office: 192.168.128.12 /30  
+  5th Office: 192.168.128.16 /30  
+  6th Office: 192.168.128.20 /30  
+  7th Office: 192.168.128.24 /30  
+  8th Office: 192.168.128.28 /30  
 
+<br>
+
+  Next Network: 192.168.128.32 /30  
+
+<br>
+
+	From the network 192.168.128.0 /27 (4th, 32i)  
+	Valid Range:  
+		First Valid: 192.168.128.1 /27  
+		Last Valid 192.168.128.30   
+		Broadcast: 192.168.128.31  
+
+<br>
+	Next Network: 192.168.128.32 /27  
+
+<br>
+<br>
+
+---
+&nbsp;
 
 Ex. 2 Subnet for 20 offices using the Network address 172.16.225.0/19. 
 Maximize the number of IP addresses.
@@ -697,6 +697,7 @@ Maximize the number of IP addresses.
 
 Ex. 3 Subnet for 20 offices using the Network address 172.16.225.0/19. 
 Maximize the number of IP addresses.
+
 
 
 
