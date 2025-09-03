@@ -18,7 +18,7 @@ Verify:
 
 ~~~cmd
 @cmd
-ping 10.91.1.10             PC Network Adapter
+ping 10.#$34T#.1.10             PC Network Adapter
 ping 10.#$34T#.1.2		    CoreTAAS
 ping 10.#$34T#.1.4		    CoreBABA
 ping 10.#$34T#.100.8		CUCM
@@ -749,6 +749,7 @@ Offices:
 &nbsp;
 
 ![ValidRangeRST](img/ValidRange.png)
+
 
 
 
