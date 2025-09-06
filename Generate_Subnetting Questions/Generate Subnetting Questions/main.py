@@ -1,5 +1,7 @@
 import json
 import random
+import ipadd
+import pprint
 
 with open('names.json') as file:
     name_store = json.load(file)
@@ -64,14 +66,14 @@ class RandomSelectValues:
         self.companies = companies
         self.users = users
     
-    def random_company(self):
+    def rand_company(self):
         total_values = len(self.companies)
         chosen_num = random.randint(1, total_values)
         chosen_name = self.companies[chosen_num - 1]
 
-        return(chosen_name)
+        return chosen_name
 
-    def random_user(self):
+    def rand_user_groups(self):
         total_values = len(self.users)
 
         max_group = 3
@@ -84,13 +86,111 @@ class RandomSelectValues:
 
             max_group -= 1
 
-        return(chosen_name)
+        return chosen_name
+    
+    def rand_total_users(self):
+        total_users = random.randint(1, 2000)
+        
+        ip_res = int(0.2*total_users)
+        
+        if ip_res > 2000:
+            ip_res = 2000
+        elif ip_res > 1000:
+            ip_res = 1000
+        elif ip_res > 500:
+            ip_res = 500
+        elif ip_res > 100:
+            ip_res = 100
+        elif ip_res > 60:
+            ip_res = 60
+        else:
+            ip_res = 10
+        
+        return (total_users, ip_res)
+    
+    def rand_vlan(self):
+        set_vlan = random.randint(1, 200)
+        
+        return (set_vlan)
+    
+    def rand_ip(self):
+        random_int = random.randint(0, 2**32 - 1)
+        random_ip = ipadd.IPv4Address(random_int)
+        
+        # Generate a random prefix length.
+        random_prefix = random.randint(1, 32)
+        
+        # Combine into a network object.
+        random_network = ipadd.IPv4Network(f"{random_ip}/{random_prefix}", strict=False)
+        
+        return (random_network, random_ip)
+        
+    def rand_net(self):
+        # Pick a random prefix length between /8 and /30
+        prefix = random.randint(4, 30)
+        
+        # Pick a random network address (only for private ranges for sanity)
+        private_ranges = [
+            ipadd.IPv4Network("10.0.0.0/8"),
+            ipadd.IPv4Network("172.16.0.0/12"),
+            ipadd.IPv4Network("192.168.0.0/16"),
+        ]
+        base = random.choice(private_ranges)
+        
+        # Generate a random subnet inside the chosen private range
+        subnets = list(base.subnets(new_prefix=prefix))
+        subnet = random.choice(subnets)
+        
+        # Extract details
+        network = subnet.network_address
+        broadcast = subnet.broadcast_address
+        all_hosts = list(subnet.hosts())  # valid usable IPs
+        
+        if all_hosts:  # ensure there are usable hosts
+            first_valid = all_hosts[0]
+            last_valid = all_hosts[-1]
+        else:
+            first_valid = last_valid = "N/A (no usable hosts)"
+
+        # Next subnet
+        next_subnet = subnet.supernet(new_prefix=subnet.prefixlen).subnets(new_prefix=subnet.prefixlen)
+        next_subnet = list(next_subnet)
+        try:
+            idx = next_subnet.index(subnet)
+            next_subnet = next_subnet[idx + 1] if idx + 1 < len(next_subnet) else "None (last subnet)"
+        except ValueError:
+            next_subnet = "Unknown"
+
+        return {
+            "CIDR": str(subnet),
+            "Network": str(network),
+            "First valid IP": str(first_valid),
+            "Last valid IP": str(last_valid),
+            "Broadcast": str(broadcast),
+            "Next Subnet": str(next_subnet)
+        }
 
 
 ## Get Company Name
-num = RandomSelectValues(company_list, user_list).random_company()
+num = RandomSelectValues(company_list, user_list).rand_company()
 print(num + '.com')
 
 ## Get User Groups
-users = RandomSelectValues(company_list, user_list).random_user()
-print(users)
+group_users = RandomSelectValues(company_list, user_list).rand_user_groups()
+print(group_users)
+
+## Get Number of Users
+num_users = RandomSelectValues(company_list, user_list).rand_total_users()
+print(num_users)
+
+## Get VLAN
+vlan = RandomSelectValues(company_list, user_list).rand_vlan()
+print(vlan)
+
+## Get IP address space
+ipv4_add = RandomSelectValues(company_list, user_list).rand_net()
+pprint.pp(ipv4_add)
+
+## Get Random IPs
+ipv4_set = RandomSelectValues(company_list, user_list).rand_ip()
+print(ipv4_set)
