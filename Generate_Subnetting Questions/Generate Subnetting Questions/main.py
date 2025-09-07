@@ -38,24 +38,6 @@ broadcast = None
 not_net_ip = None
 not_net_mask = None
 
-answer_temp = f'''
-C: {req_hosts} = {host_bits} bits
-
-S: /32 - {host_bits} = {new_cidr} {rivan_format}
-
-I: Ipasok {increment} sa {octet} octet = {company_net_ip} {company_net_mask}
-
---
-
-NETWORK: ({company_name}) = {company_net_ip} {company_net_mask}
-VALID RANGE:
-- FIRST VALID IP = {first_valid}
-- LAST VALID IP = {last_valid}
-BROADCAST/LAST IP = {broadcast}
-
-NOT NETWORK: (NOT {company_name}) = {not_net_ip} {not_net_mask}
-'''
-
 class Computation:
     def __init__(self, companies, users, is_question=True):
         self.companies = companies
@@ -107,15 +89,15 @@ class Computation:
 
                 if base == ipadd.IPv4Network("10.0.0.0/8"):
                     # Pick a random _prefix length between /4 and /30
-                    _prefix = random.randint(8, 30)
+                    _prefix = random.randint(9, 30)
 
                 elif base == ipadd.IPv4Network("172.16.0.0/12"):
                     # Pick a random _prefix length between /12 and /30
-                    _prefix = random.randint(16, 30)
+                    _prefix = random.randint(17, 30)
                 
                 elif base == ipadd.IPv4Network("192.168.0.0/16"):
                     # Pick a random _prefix length between /16 and /30
-                    _prefix = random.randint(24, 30)
+                    _prefix = random.randint(25, 30)
 
                 subnets = list(base.subnets(new_prefix=_prefix))
 
@@ -126,7 +108,7 @@ class Computation:
 
         ## NETWORK: Select a random subnet
         total_subnets = len(subnets)
-        chosen_subnet = random.randint(1, total_subnets - 1)
+        chosen_subnet = random.randint(1, total_subnets - 2)
         _network = subnets[chosen_subnet]
 
         ## NOT NETWORK: Determine the next network
@@ -160,8 +142,10 @@ class Computation:
         }
         
         if self.is_question == True:
-            _given_req_hosts = random.randint(2, _hosts)
+            if _hosts > 6000:
+                _hosts = 6000
 
+            _given_req_hosts = random.randint(2, _hosts)
             _given_reserved_ips = self.set_reserved_ips(_given_req_hosts)
 
             _given_values = {
@@ -215,37 +199,31 @@ class Computation:
         
     #     return (random_network, random_ip)
 
+
 ## Given Company
 company = Computation(company_list, user_list).rand_company()
 company_name = company + '.com'
-print(company_name)
 
 ## Given User Groups
 user_group = Computation(company_list, user_list).rand_user_groups()
 user_group = str(user_group).replace('\'', '')
 user_group = str(user_group).replace('[', '')
 user_group = str(user_group).replace(']', '')
-print(user_group)
 
 ## Given VLAN
 vlan = Computation(company_list, user_list).rand_vlan()
-print(vlan)
 
 ## Given IP Address Space
 req_values = Computation(company_list, user_list).rand_net()
 ip_space = str(req_values['network'])
-print(ip_space)
 
 ## Given Required Hosts
 req_hosts = req_values['req_hosts']
-print(req_hosts)
 
 ## Given Required Reserved IPs
 req_reserved_ips = req_values['reserved_ips']
-print(req_reserved_ips)
 
-
-
+## Question
 question_temp = f'''
 Design a network for {company_name} with {req_hosts} {user_group}. 
 - Use the available IP address space {ip_space}
@@ -253,5 +231,41 @@ Design a network for {company_name} with {req_hosts} {user_group}.
 - Set the network for VLAN {vlan}
 '''
 
-## Question
-print(question_temp)
+print(f'''
+-----------QUESTION------------
+{question_temp}
+      ''')
+
+
+## Solution
+host_bits = rivan.GetCAI(req_hosts).convert_host_bits()
+constant = 32
+new_slash = f'/{str(constant - host_bits)}' 
+rivan_format = rivan.FromCIDR.to_rivan(new_slash)
+
+print(f'''
+      Convert: {req_hosts} = {host_bits} bits
+      Subtract: {constant} - {host_bits} = {new_slash} = ({rivan_format})
+      Ipasok: Ipasok
+      ''')
+
+## Answer
+answer_temp = f'''
+C: {req_hosts} = {host_bits} bits
+
+S: /32 - {host_bits} = {new_cidr} {rivan_format}
+
+I: Ipasok {increment} sa {octet} octet = {company_net_ip} {company_net_mask}
+
+--
+
+NETWORK: ({company_name}) = {company_net_ip} {company_net_mask}
+VALID RANGE:
+- FIRST VALID IP = {first_valid}
+- LAST VALID IP = {last_valid}
+BROADCAST/LAST IP = {broadcast}
+
+NOT NETWORK: (NOT {company_name}) = {not_net_ip} {not_net_mask}
+'''
+
+# print(answer_temp)
