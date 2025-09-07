@@ -52,9 +52,9 @@ class FromCIDR:
         octet = FromCIDR.get_oct(cidr)
         increment = FromCIDR.get_inc(cidr)
         
-        return f'({octet}, {str(increment)}i)'
+        return octet, increment
 
-class GetCAI:
+class GetCSI:
     def __init__(self, given_hosts):
         self.given_hosts = int(given_hosts)
     
