@@ -53,3 +53,49 @@ class FromCIDR:
         increment = FromCIDR.get_inc(cidr)
         
         return f'({octet}, {str(increment)}i)'
+
+class GetCAI:
+    def __init__(self, given_hosts):
+        self.given_hosts = int(given_hosts)
+    
+    def convert_host_bits(self):
+        if self.given_hosts >= 32768:
+            host_bits = 16
+        elif self.given_hosts >= 16384:
+            host_bits = 15
+        elif self.given_hosts >= 8192:
+            host_bits = 14
+        elif self.given_hosts >= 4096:
+            host_bits = 13
+        elif self.given_hosts >= 2048:
+            host_bits = 12
+        elif self.given_hosts >= 1024:
+            host_bits = 11
+        elif self.given_hosts >= 512:
+            host_bits = 10
+        elif self.given_hosts >= 256:
+            host_bits = 9
+        elif self.given_hosts >= 128:
+            host_bits = 8
+        elif self.given_hosts >= 64:
+            host_bits = 7
+        elif self.given_hosts >= 32:
+            host_bits = 6
+        elif self.given_hosts >= 16:
+            host_bits = 5
+        elif self.given_hosts >= 8:
+            host_bits = 4
+        elif self.given_hosts >= 4:
+            host_bits = 3
+        elif self.given_hosts >= 2:
+            host_bits = 2
+        elif self.given_hosts >= 1:
+            host_bits = 1
+        
+        return host_bits
+        
+        
+        
+        
+        
+        
