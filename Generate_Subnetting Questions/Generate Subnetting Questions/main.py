@@ -2,6 +2,7 @@ import json
 import random
 import ipadd
 import pprint
+import rivan
 
 with open('names.json') as file:
     name_store = json.load(file)
@@ -113,23 +114,20 @@ class RandomSelectValues:
         
         return (set_vlan)
     
-    def rand_ip(self):
-        random_int = random.randint(0, 2**32 - 1)
-        random_ip = ipadd.IPv4Address(random_int)
+    # def rand_ip(self):
+    #     random_int = random.randint(0, 2**32 - 1)
+    #     random_ip = ipadd.IPv4Address(random_int)
         
-        # Generate a random prefix length.
-        random_prefix = random.randint(1, 32)
+    #     # Generate a random _prefix length.
+    #     random__prefix = random.randint(1, 32)
         
-        # Combine into a network object.
-        random_network = ipadd.IPv4Network(f"{random_ip}/{random_prefix}", strict=False)
+    #     # Combine into a network object.
+    #     random_network = ipadd.IPv4Network(f"{random_ip}/{random__prefix}", strict=False)
         
-        return (random_network, random_ip)
+    #     return (random_network, random_ip)
         
     def rand_net(self):
-        # Pick a random prefix length between /8 and /30
-        prefix = random.randint(4, 30)
-        
-        # Pick a random network address (only for private ranges for sanity)
+        # Pick a random private network address
         private_ranges = [
             ipadd.IPv4Network("10.0.0.0/8"),
             ipadd.IPv4Network("172.16.0.0/12"),
@@ -137,60 +135,80 @@ class RandomSelectValues:
         ]
         base = random.choice(private_ranges)
         
-        # Generate a random subnet inside the chosen private range
-        subnets = list(base.subnets(new_prefix=prefix))
-        subnet = random.choice(subnets)
-        
-        # Extract details
-        network = subnet.network_address
-        broadcast = subnet.broadcast_address
-        all_hosts = list(subnet.hosts())  # valid usable IPs
-        
-        if all_hosts:  # ensure there are usable hosts
-            first_valid = all_hosts[0]
-            last_valid = all_hosts[-1]
-        else:
-            first_valid = last_valid = "N/A (no usable hosts)"
+        # Pick a random _prefix length between /4 and /30
+        _prefix = random.randint(4, 30)
 
-        # Next subnet
-        next_subnet = subnet.supernet(new_prefix=subnet.prefixlen).subnets(new_prefix=subnet.prefixlen)
-        next_subnet = list(next_subnet)
-        try:
-            idx = next_subnet.index(subnet)
-            next_subnet = next_subnet[idx + 1] if idx + 1 < len(next_subnet) else "None (last subnet)"
-        except ValueError:
-            next_subnet = "Unknown"
+        if base == ipadd.IPv4Network("10.0.0.0/8"):
+            # Pick a random _prefix length between /4 and /30
+            _prefix = random.randint(8, 30)
 
-        return {
-            "CIDR": str(subnet),
-            "Network": str(network),
-            "First valid IP": str(first_valid),
-            "Last valid IP": str(last_valid),
-            "Broadcast": str(broadcast),
-            "Next Subnet": str(next_subnet)
+        elif base == ipadd.IPv4Network("172.16.0.0/12"):
+            # Pick a random _prefix length between /12 and /30
+            _prefix = random.randint(16, 30)
+        
+        elif base == ipadd.IPv4Network("192.168.0.0/16"):
+            # Pick a random _prefix length between /16 and /30
+            _prefix = random.randint(24, 30)
+
+        subnets = list(base.subnets(new_prefix=_prefix))
+
+        
+        ## NETWORK: Select a random subnet
+        total_subnets = len(subnets)
+        chosen_subnet = random.randint(1, total_subnets - 1)
+        _network = subnets[chosen_subnet]
+
+        ## NOT NETWORK: Determine the next network
+        _next_network = subnets[chosen_subnet + 1]
+
+        ## Get the increment
+        _i = rivan.FromCIDR.get_inc(_prefix)
+
+        ## Get valid range
+        ## FIRST VALID IP
+        _first_valid = _network[1]
+
+        ## LAST VALID IP
+        _last_valid = _network[-2]
+
+        
+        ## LAST IP/BROADCAST
+        _broadcast = _network[-1]
+
+        network_values = {
+            'prefix': _prefix,
+            'increment': _i,
+            'network': _network,
+            'first_valid': _first_valid,
+            'last_valid': _last_valid,
+            'broadcast': _broadcast,
+            'next_network': _next_network
         }
 
+        pprint.pp(network_values)
+
+        return network_values
 
 ## Get Company Name
 num = RandomSelectValues(company_list, user_list).rand_company()
-print(num + '.com')
+# print(num + '.com')
 
 ## Get User Groups
 group_users = RandomSelectValues(company_list, user_list).rand_user_groups()
-print(group_users)
+# print(group_users)
 
 ## Get Number of Users
 num_users = RandomSelectValues(company_list, user_list).rand_total_users()
-print(num_users)
+# print(num_users)
 
 ## Get VLAN
 vlan = RandomSelectValues(company_list, user_list).rand_vlan()
-print(vlan)
+# print(vlan)
 
 ## Get IP address space
 ipv4_add = RandomSelectValues(company_list, user_list).rand_net()
-pprint.pp(ipv4_add)
+# pprint.pp(ipv4_add)
 
-## Get Random IPs
-ipv4_set = RandomSelectValues(company_list, user_list).rand_ip()
-print(ipv4_set)
+# ## Get Random IPs
+# ipv4_set = RandomSelectValues(company_list, user_list).rand_ip()
+# print(ipv4_set)
